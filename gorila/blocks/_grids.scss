@@ -1,0 +1,49 @@
+.go-grid {
+	background-color: $color-1;
+	overflow: hidden;
+
+	.item-title {
+		font: 25px $sub-font;
+		display: none;
+		position: absolute;
+		color: #fff;
+		bottom: 50%;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	img {
+		height: 100%;
+		width: 100%;
+		max-width: none;
+		position: absolute;
+		top: -9999px;
+		bottom: -9999px;
+		left: -9999px;
+		right: -9999px;
+		margin: auto;
+		transition: 0.2s;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		padding-top: 100%; 	/* initial ratio of 1:1*/
+	}
+
+	&:hover {
+		cursor: pointer;
+		.item-title {
+			display: block;
+		}
+
+		img {
+			height: 110%;
+			width: 110%;
+			opacity: .1;
+			transition: 0.2s;
+		}
+	}
+}

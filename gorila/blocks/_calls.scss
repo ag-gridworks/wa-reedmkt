@@ -1,0 +1,41 @@
+.go-call {
+	@include make-md-column(12);
+	background-color: $color-2;
+	background: url('https://newevolutiondesigns.com/images/freebies/city-wallpaper-11.jpg') no-repeat center center;
+	background-size: cover;
+	padding: 30px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,$color-1,$color-1);
+		opacity: .9; 
+	}
+
+	.item-inner {
+		@include make-md-column(10);
+		@include make-md-column-offset(1);
+		position: relative;
+		text-align: center;
+		width: 100%;
+		color: #fff;
+		// top: 50%;
+		// transform: translateY(-50%);
+
+		.item-title {
+			font: 28px $sub-font;
+			color: #fff;
+		}
+
+		.item-content {
+			font-weight: 100;
+		    line-height: 28px;
+		    font-size: 15px;
+		    margin: 20px 0px;
+		}
+	}
+}

@@ -1,0 +1,49 @@
+h1,h2,h3,h4,h5,h6 {
+	font-family: $sub-font;
+	font-weight: bold;
+}
+
+.go-title-area {
+	display: block;
+	margin: 30px 0px;
+}
+
+.go-title {
+	font-family: $sub-font;
+	color: #4A4A4A;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+
+	&:after {
+		content: "";
+		height: 4px;
+		width: 100%;
+		background-image: linear-gradient(-90deg, $color-2 0%, $color-3 100%);
+		display: inline-block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.go-title.x1 {
+@extend .go-title;
+padding-bottom: 0;
+	
+    &:after {
+		content:'';
+        position:absolute;
+        left:0; right:0;
+        top:100%;
+        margin:10px auto;
+        width:50%;
+        height:3px;
+        background: $color-2;
+    }
+}
+
+.go-title.light {
+	color: #fff;
+}

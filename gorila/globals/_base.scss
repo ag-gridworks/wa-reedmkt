@@ -1,0 +1,25 @@
+body {
+// background-color: #ededed;
+color: #4a4a4a;
+font-family: 'Open Sans';
+background-color: #f5f5f5;
+}
+
+.content {@include make-row;}
+
+a {text-decoration: none !important;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:active {text-decoration: underline;}
+
+// Mantem todas as imagens do HTML responsivas ao elemento
+img {@include img-responsive;}
+
+// Limpar
+.clear {clear: both;}
+
+// Alinhar fonte dos elementos
+.left {text-align: left !important;}
+.right {text-align: right !important;}
+.center {text-align: center !important;}

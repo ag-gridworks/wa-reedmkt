@@ -1,0 +1,52 @@
+// Layout at XS
+@media (max-width: 768px) {
+  .box-2 .box-right {text-align: center !important}
+  .box-2 .box-left {margin-bottom: 15px}
+  .box-2 .box-right>.content>.footer {position: relative !important}
+  .box-2 .box-left>.box-thumb img {width: 90px !important}
+  // .hero {margin-top: -20px;}
+  .box-5 .box-left {min-height: 300px}
+  .box-5 .box-right .box-content {padding: 0; margin: 15px 0px;}
+}
+
+// Layout at SM
+@media (max-width: 992px) {
+  // .go-hero {margin-top: -20px;}
+}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+
+  ul.topnav li a.button {
+    float: left;
+        margin-left: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+  ul.topnav li a.button {
+    float: left;
+  }
+}

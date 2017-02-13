@@ -1,0 +1,26 @@
+{
+  "name": "Gorila CSS 3.0 - Atomic Gorila",
+  "homepage": "https://github.com/paesvitor/gorila-css-3",
+  "authors": [
+    "Vitor Paes <paesvitor@outlook.com>"
+  ],
+  "description": "Gorila CSS Framework",
+  "main": "scripts/main.js",
+  "keywords": [
+    "Gorila",
+    "CSS"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "components-font-awesome": "^4.7.0"
+  }
+}

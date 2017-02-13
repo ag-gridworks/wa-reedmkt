@@ -1,0 +1,41 @@
+.rx_wrapper {
+	@include make-md-column(10);
+	@include make-md-column-offset(1);
+	// padding-top: 30px;
+	background-color: #fff;
+	box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+	min-height: 100vh;
+}
+
+.product-box {
+	@include make-md-column(12);
+
+	.product-image {
+		@include make-md-column(6);
+
+		img {
+			box-shadow: 0 1px 4px 0px #999;
+		}
+	}
+
+	.product-info {
+		@include make-md-column(6);
+
+		.product-seller {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+
+		.product-value {
+			font: 38px $sub-font;
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
+
+		.product-description {
+			margin-top: 50px;
+			line-height: 28px;
+			font-size: 17px;
+		}
+	}
+}

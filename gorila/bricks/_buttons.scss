@@ -1,0 +1,133 @@
+// Default Button Code
+.go-button {
+	background-color: $color-1;
+	padding: 5px 25px;
+	font: 20px $sub-font;
+	color: #fff;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	display: inline-block;
+	margin: 0 auto;
+	margin-bottom: 5px;
+
+	&:hover {
+		background-color: transparent;
+		border: 1px solid $color-1;
+		transition: 0.2s;
+		color: $color-1;
+	}
+}
+
+// Button Default Sizes
+.go-button.small {
+	font-size: 15px;
+	padding: 0px 20px;
+}
+
+.go-button.medium {
+	font-size: 25px;
+	padding: 10px 30px;
+}
+
+.go-button.large {
+	font-size: 30px;
+	padding: 15px 35px;
+}
+
+.go-button.full {
+	width: 100%;
+}
+
+// Button Default Colors
+.go-button.turquoise {
+	background-color: $turquoise;
+	&:hover {
+		background-color: $t;
+		color: $turquoise;
+		border-color: $turquoise;
+	}
+}
+.go-button.green {
+	background-color: $green;
+	&:hover {
+		background-color: $t;
+		color: $green;
+		border-color: $green;
+	}
+}
+.go-button.blue {
+	background-color: $blue;
+	&:hover {
+		background-color: $t;
+		color: $blue;
+		border-color: $blue;
+	}
+}
+.go-button.purple {
+	background-color: $purple;
+	&:hover {
+		background-color: $t;
+		color: $purple;
+		border-color: $purple;
+	}
+}
+.go-button.dark {
+	background-color: $dark;
+	&:hover {
+		background-color: $t;
+		color: $dark;
+		border-color: $dark;
+	}
+}
+.go-button.yellow {
+	background-color: $yellow;
+	&:hover {
+		background-color: $t;
+		color: $yellow;
+		border-color: $yellow;
+	}
+}
+.go-button.orange {
+	background-color: $orange;
+	&:hover {
+		background-color: $t;
+		color: $orange;
+		border-color: $orange;
+	}
+}
+.go-button.red {
+	background-color: $red;
+	&:hover {
+		background-color: $t;
+		color: $red;
+		border-color: $red;
+	}
+}
+
+.go-button.call {
+	@extend .go-button;
+	background-color: $t;
+	border: 2px solid $color-2;
+	cursor: pointer;
+
+	i {
+		padding-left: 5px;
+	}
+
+	&:hover {
+		background-color: $color-2;
+		color: $color-1;
+		border: 2px solid $color-2;
+	}
+}
+
+.go-button.fixed {
+	@extend .go-button;
+	position: fixed;
+    z-index: 10000;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    max-width: 190px;
+    padding: 5px 10px;
+}

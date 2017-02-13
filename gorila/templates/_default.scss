@@ -1,0 +1,135 @@
+.default-services {
+	@include make-md-column(12);
+	padding: 0;
+	>.default-services__item {
+		@include make-xs-column(12);
+		@include make-sm-column(6);
+		@include make-md-column(3);
+		margin: 15px 0px;
+		>.item-inner {
+			padding: 30px;
+		}
+	}
+}
+
+.default-infobox {
+	@include make-md-column(12);
+	background-color: $color-1;
+	padding: 60px;
+	color: #fff;
+	background-image: url("../images/nerve.jpg");
+
+	.infobox-title {
+		font: 40px $sub-font;
+		font-weight: bold;
+	}
+
+	.infobox-subtitle {
+		font-size: 13px;
+		line-height: 28px;
+		margin-bottom: 30px;
+	}
+
+	.default-infobox__item {
+		@include make-md-column(4);
+	}
+}
+
+.default-infos {
+	@include make-md-column(12);
+	padding: 0;
+	background-color: $color-1;
+	padding-top: 20px;
+	.default-infos__item {
+		@include make-xs-column(12);
+		@include make-sm-column(12);
+		@include make-md-column(4);
+
+		.item-inner {
+			padding: 30px;
+		}
+	}
+}
+
+.default-grid {
+	@include make-md-column(12);
+	padding: 0;
+	.default-grid__item {
+		@include make-md-column(3);
+
+		.item-inner {
+
+		}
+	}
+}
+
+.default-profiles {
+	@include make-md-column(12);
+	.default-profiles__item {
+		@include make-md-column(6);
+	}
+}
+
+.default-box1 {
+	@include make-md-column(12);
+	padding: 0;
+	>.default-box1__item {
+		@include make-xs-column(12);
+		@include make-sm-column(12);
+		@include make-md-column(12);
+		margin: 15px 0px;
+		>.item-inner {
+			padding: 30px;
+		}
+	}
+}
+
+.default-contact {
+	@include make-md-column(12);
+	background-image: url("../images/nerve.jpg");
+	color: #fff;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	.item-subtitle {
+	@include make-md-column(8);
+	@include make-md-column-offset(2);
+	font-weight: 300;
+    line-height: 35px;
+    font-size: 15px;
+    margin: 20px 0px;
+	}
+	.item-inner {
+	@include make-md-column(8);
+	@include make-md-column-offset(2);
+	// padding: 60px;
+	text-align: center;
+	}
+}
+
+footer {
+	background-color: $color-1;
+	border-top: 2px solid $color-2;
+	padding: 60px;
+	text-align: center;
+	.item-brand {
+		color: #fff;
+		font: 22px $sub-font;
+		margin-bottom: 20px;
+	}
+
+	.item-social {
+		display: inline-block;
+		i {
+			font-size: 24px;
+			color: #fff;
+			padding: 23px;
+			color: $color-2;
+			transition: 0.2s;
+
+			&:hover {
+				transition: 0.2s;
+				color: #fff;
+			}
+		}
+	}
+}
