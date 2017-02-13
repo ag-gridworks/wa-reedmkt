@@ -10,10 +10,12 @@
 
 	$profile_name = $profile['username'];
 	$profile_email = $profile['email'];
+	$profile_cover = $profile['profile_cover'];
 
 	?>
 
-	<section class="go-hero">
+	<section style="background: url('fotos/<?php echo "$profile_cover"; ?>') no-repeat center center;
+		background-size: cover;" class="go-hero">
 		<div class="hero-content">
 			<div class="profile-image">
 				<img src="images/posts/card090.jpg" alt="">
@@ -24,7 +26,7 @@
 			</div>
 
 			<?php if($user_id == $profile_id): ?>
-				<a style="margin-top: 15px" class="go-button small purple" href="#">Alterar Perfil</a>
+				<a style="margin-top: 15px" class="go-button small purple" href="alterar-perfil.php">Alterar Perfil</a>
 			<?php endif; ?>
 				
 		</div>
@@ -112,19 +114,19 @@
 	<?php while($obj = $result->fetch_object()): ?>
 
 		<div class="default-services__item">
+		<form style="height: 100%" method="GET" action="produto.php">
 			<div class="item-inner go-box-7 hover-1">
 				<div class="item-thumb">
 					<img src="fotos/<?php echo "$obj->image"; ?>" alt="">
 				</div>
 
 				<div class="item-inner">
-					<div class="item-title">
-						<?php echo "$obj->name"; ?>
-					</div>
 
 					<div class="item-title">
 						<?php echo "$obj->name"; ?>
 					</div>
+
+
 
 					<!-- <div class="item-options">
 						<form method="POST" action="alterar-produto.php">
@@ -143,13 +145,20 @@
 						R$<?php echo "$obj->value"; ?>
 					</div>
 
+
+					<input type="hidden" value="<?php echo $obj->id ?>" name="product_id">
+					<input type="hidden" value="<?php echo $obj->user_id ?>" name="profile_id">
+					<input class="go-button small" style="margin-top: 20px" type="submit" value="Ver Produto" name="ver">
+
 					<div class="item-content">
-						<?php echo "$obj->description"; ?>
+						<?php $a = getExcerpt($obj->description); ?>
+						<?php echo "$a"; ?>
 					</div>
 
 
 				</div>
 			</div>
+			</form>
 		</div>
 
 	<?php endwhile; ?>
