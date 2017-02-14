@@ -10,12 +10,21 @@
 
 	$profile_name = $profile['username'];
 	$profile_email = $profile['email'];
+	$profile_floor = $profile['profile_floor'];
+	$profile_phone = $profile['profile_phone'];
+	$profile_sector = $profile['profile_sector'];
+
 	$profile_cover = $profile['profile_cover'];
 
+	// echo strlen($profile_cover);
 	?>
-
-	<section style="background: url('fotos/<?php echo "$profile_cover"; ?>') no-repeat center center;
-		background-size: cover;" class="go-hero">
+	<?php if (strlen($profile_cover) == 0) {
+		$get_profile_cover = "background: url('images/default.jpg')";
+	} else
+		$get_profile_cover = "background: url('fotos/<?php echo $profile_cover; ?>') no-repeat center center;
+		background-size: cover;"
+		?>
+	<section style="<?php echo "$get_profile_cover"; ?>" class="go-hero">
 		<div class="hero-content">
 			<div class="profile-image">
 				<img src="images/posts/card090.jpg" alt="">
@@ -26,7 +35,7 @@
 			</div>
 
 			<?php if($user_id == $profile_id): ?>
-				<a style="margin-top: 15px" class="go-button small call" href="alterar-perfil.php">Alterar Perfil</a>
+				<a style="margin-top: 15px" class="go-button small call" href="alterar-perfil.php">Editar Perfil</a>
 			<?php endif; ?>
 				
 		</div>
@@ -64,7 +73,7 @@
 					</div>
 
 					<div class="item-content">
-						<?php echo $profile_email ?>
+						<?php echo $profile_floor ?>
 					</div>
 				</div>
 			</div>
@@ -80,7 +89,7 @@
 					</div>
 
 					<div class="item-content">
-						<?php echo $profile_email ?>
+						<?php echo $profile_phone ?>
 					</div>
 				</div>
 			</div>
@@ -96,7 +105,7 @@
 					</div>
 
 					<div class="item-content">
-						<?php echo $profile_email ?>
+						<?php echo $profile_sector ?>
 					</div>
 				</div>
 			</div>
@@ -150,10 +159,10 @@
 					<input type="hidden" value="<?php echo $obj->user_id ?>" name="profile_id">
 					<input class="go-button small" style="margin-top: 20px" type="submit" value="Ver Produto" name="ver">
 
-					<div class="item-content">
+					<!-- <div class="item-content">
 						<?php $a = getExcerpt($obj->description); ?>
 						<?php echo "$a"; ?>
-					</div>
+					</div> -->
 
 
 				</div>
@@ -169,3 +178,5 @@
 
 <?php endif; ?>
 <?php endif; ?>
+
+<?php require_once("footer.php") ?>

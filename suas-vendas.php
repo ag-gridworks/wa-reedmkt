@@ -21,17 +21,17 @@
 						<div class="item-options">
 							<input type="hidden" value="<?php echo $obj->id ?>" name="product_id">
 							<input type="hidden" value="<?php echo $obj->user_id ?>" name="profile_id">
-							<input class="go-button small orange full" type="submit" value="Ver Produto" name="ver">
+							<input class="go-button full small purple" type="submit" value="Ver Produto" name="ver">
 						</form>	
 						<form method="POST" action="alterar-produto.php">
 							<input type="hidden" value="<?php echo $obj->id ?>" name="product_id">
-							<input class="go-button small full" type="submit" value="Alterar" name="alterar">
+							<input class="go-button full small" type="submit" value="Alterar" name="alterar">
 						</form>
 
 						<form method="POST" action="process.php">
 							<input type="hidden" value="vendas" name="database">
 							<input type="hidden" value="<?php echo $obj->id ?>" name="product_id">
-							<input type="submit" class="go-button small  red full" value="Deletar" name="deletar">
+							<input type="submit" class="go-button full small red" value="Deletar" name="deletar">
 						</form>
 					</div>
 					<div class="item-content">

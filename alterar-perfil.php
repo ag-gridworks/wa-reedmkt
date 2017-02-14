@@ -2,23 +2,105 @@
 
 <?php if (isset($_SESSION['uid'])): ?>
 
+	<?php 
+	$profile_id = $user_id;
+
+	$profile_get = mysql_query("SELECT * FROM user WHERE id = '$profile_id'") or die(mysql_error());
+	$profile = mysql_fetch_assoc($profile_get);
+
+	$profile_name = $profile['username'];
+	$profile_email = $profile['email'];
+	$profile_floor = $profile['profile_floor'];
+	$profile_phone = $profile['profile_phone'];
+	$profile_sector = $profile['profile_sector'];
+
+	$profile_cover = $profile['profile_cover'];
+	?>
+
+	<style>input {text-align: center;}</style>
+
 	<div class="rx_wrapper">
 		
 		<div class="go-title-area center">
-		<h3 class="go-title x1">Alterar Perfil</h3>
+			<h3 class="go-title x1">Alterar Perfil</h3>
 		</div>
-
+		
 		<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data" name="cadastro">
+			<section class="default-services go-flex center">
+				<div class="default-services__item">
+					<div class="item-inner go-box-1 hover-1">
+						<div class="item-icon">
+							<i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+						</div>
 
-			<div class="form-group">
+						<div class="item-title">
+							E-Mail
+						</div>
+
+						<div class="item-content">
+							<input class="form-control" type="text" name="email" value="<?php echo $profile_email ?>">
+						</div>
+					</div>
+				</div>
+
+				<div class="default-services__item">
+					<div class="item-inner go-box-1 hover-1">
+						<div class="item-icon">
+							<i class="fa fa-building-o" aria-hidden="true"></i>
+						</div>
+
+						<div class="item-title">
+							Andar
+						</div>
+
+						<div class="item-content">
+							<input class="form-control" type="text" name="floor" value="<?php echo $profile_floor ?>">
+						</div>
+					</div>
+				</div>
+
+				<div class="default-services__item">
+					<div class="item-inner go-box-1 hover-1">
+						<div class="item-icon">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</div>
+
+						<div class="item-title">
+							Ramal
+						</div>
+
+						<div class="item-content">
+							<input class="form-control" type="text" name="phone" value="<?php echo $profile_phone ?>">
+						</div>
+					</div>
+				</div>
+
+				<div class="default-services__item">
+					<div class="item-inner go-box-1 hover-1">
+						<div class="item-icon">
+							<i class="fa fa-address-card-o" aria-hidden="true"></i>
+						</div>
+
+						<div class="item-title">
+							Setor
+						</div>
+
+						<div class="item-content">
+							<input class="form-control" type="text" name="sector" value="<?php echo $profile_sector ?>">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- <div class="form-group">
 				<label for="exampleInputFile">Imagem de Capa</label>
 				<input type="file" class="form-control-file" name="foto" aria-describedby="fileHelp">
-			</div>
+			</div> -->
 
 			
 			<div class="go-title-area center">
-			<input type="hidden" value="<?php echo $user_id ?>" name="user_id">
-			<button type="submit" class="go-button" name="alterar">Alterar Perfil</button>
+				<input type="hidden" value="<?php echo $user_id ?>" name="user_id">
+				<button type="submit" class="go-button small" name="alterar_perfil">Alterar Perfil</button>
 			</div>
 		</form>
 
@@ -29,7 +111,22 @@
 
 		<?php
 
-		if (isset($_POST['alterar'])) {
+		if (isset($_POST['alterar_perfil'])) {
+			$email = $_POST['email'];
+			$phone = $_POST['phone'];
+			$sector = $_POST['sector'];
+			$floor = $_POST['floor'];
+			$user_id = $_POST['user_id'];
+
+			$sql = mysql_query("UPDATE user SET email = '$email', profile_phone = '$phone', profile_sector = '$sector', profile_floor = '$floor'  WHERE id = '$user_id'");
+
+			if(!$sql)
+					die ("The error is: " . mysqli_error($connection));
+				else
+					echo "<script>location.href = '$profile_url';</script>";
+			}
+
+		if (isset($_POST['alterar_capa'])) {
 
 			$foto = $_FILES['foto'];
 			$user_id = $_POST['user_id'];
@@ -69,17 +166,15 @@
 
 
 
-				 $sql = mysql_query("UPDATE user SET profile_cover = '$nome_imagem' WHERE id = '$user_id'");
-				if ($sql){
-					echo "Alterado";
-				} else {
-					echo "error";
-				}
+				$sql = mysql_query("UPDATE user SET profile_cover = '$nome_imagem' WHERE id = '$user_id'");
+				header('Location: http://www.example.com/someurl.php', true);
+				
 			}
 		}
 
-			endif;
-			?>
-			<div style="margin-bottom: 80px"></div>
-		</div>
+		endif;
+		?>
+		<div style="margin-bottom: 80px"></div>
+	</div>
 
+	<?php require_once("footer.php") ?>

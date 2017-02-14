@@ -78,6 +78,8 @@
 	>.item-content {
 		margin-top: 15px;
 		line-height: 25px;
+		font-size: 18px;
+		word-wrap: break-word;
 	}
 
 	>.item-options {
@@ -289,6 +291,17 @@
 	@extend .go-box-default;
 	padding: 0 !important;
 
+	.item-category {
+		// background-color: $blue;
+		color: $white;
+		padding: 8px;
+		font-weight: bold;
+
+		i {
+			padding-right: 5px;
+		}
+	}
+
 	>.item-thumb {
 		img {
 			width: 100%;
@@ -304,13 +317,15 @@
 		padding: 30px;
 		>.item-title {
 			font: 19px $sub-font;
-			color: $grey;
+			color: $title-color;
 			font-weight: bold;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 		}
 
 		>.item-subtitle {
-			font: 25px $sub-font;
+			font: 20px $sub-font;
+			font-weight: bold;
+			color: $title-color;
 		}
 
 		>.item-content {

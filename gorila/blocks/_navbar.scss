@@ -7,6 +7,8 @@
     padding: 0;
     // margin-bottom: 2px;
     background-color: $color-1;
+    box-shadow: 0 2px 3px rgba(10,10,10,0.1), 0 0 0 1px rgba(10,10,10,0.1);
+    z-index: 1000;
 }
 
 .go-navbar.hero {
@@ -61,8 +63,9 @@ ul.topnav li a.button {
     border-radius: 3px;
     color: $color-1;
     border: 2px solid transparent;
-    margin-top: 16px;
+    margin-top: 19px;
     margin-right: 10px;
+    font-weight: bold;
 
     &:hover {
         color: #fff;

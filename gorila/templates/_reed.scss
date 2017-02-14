@@ -21,9 +21,14 @@
 	.product-info {
 		@include make-md-column(6);
 
+		.product-category {
+			font-size: 20px;
+			margin-bottom: 15px;
+		}
+
 		.product-seller {
 			font-size: 20px;
-			margin-bottom: 30px;
+			margin-bottom: 15px;
 		}
 
 		.product-value {
@@ -48,4 +53,46 @@
 	box-shadow: 0 1px 4px 0px #999;
 	margin: 0 auto;
 	border: 2px solid $t;
+}
+
+.product-categories {
+	@include make-xs-column(12);
+	@include make-sm-column(12);
+	@include make-md-column(12);
+	padding: 0;
+	ul {
+		display: table;
+		list-style-type: none;
+		@include make-xs-column(12);
+		@include make-sm-column(12);
+		@include make-md-column(12);
+		padding: 0;
+		li {
+			a {
+			@include make-xs-column(2);
+			@include make-sm-column(2);
+			@include make-md-column(2);
+			padding: 13px 12px;
+			background-color: #022d63;
+			border-right: 1px solid #0f3b71;
+			color: #fff;
+			text-align: center;
+			transition: 0.2s;
+			border-bottom: 4px solid #000;
+			font: 16px $sub-font;
+			font-weight: bold;
+			}
+
+			a#lazer {border-bottom-color: $blue;}
+			a#casa {border-bottom-color: $yellow;}
+			a#moda {border-bottom-color: $purple;}
+			a#eletro {border-bottom-color: $green;}
+			a#livros {border-bottom-color: $red;}
+			a#cosmeticos {border-bottom-color: $turquoise;}
+
+			i {
+				font-size: 20px;
+			}
+		}
+	}
 }

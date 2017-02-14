@@ -20,10 +20,11 @@
 	$product_image = $product['image'];
 	$product_name = $product['name'];
 	$product_value = $product['value'];
+	$product_category = $product['category'];
 	$product_description = $product['description'];
 
 	?>
-
+<?php include("menu-categoria.php"); ?>
 
 	<div class="rx_wrapper">
 		<div class="go-title-area center">
@@ -38,6 +39,9 @@
 			</div>
 
 			<div class="product-info">
+				<div class="product-category">
+					<?php echo "<i class=\"fa fa-tags\" aria-hidden=\"true\"></i> $product_category"; ?>
+				</div>
 				<div class="product-seller">
 					<?php echo "<i class=\"fa fa-user-circle\" aria-hidden=\"true\"></i> Vendedor: $profile_name"; ?>
 				</div>
@@ -76,7 +80,7 @@
 				<table class="table table-striped table-bordered sortable" cellspacing="0" width="100%">
 					<thead>
 						<tr>
-							<th></th>
+							<!-- <th></th> -->
 							<th>Usuário</th>
 							<th>Data</th>
 							<th>Valor do Lance</th>
@@ -97,8 +101,8 @@
 						$profile_username = $profile['username']; ?>
 
 						<tr>
-							<td><img class="profile_image" src="images/cards/card1.jpg" alt=""></td>
-							<td><?php echo "$profile_username" ?></td>
+							<td><img class="profile_image" src="images/cards/card1.jpg" alt=""><br><?php echo "$profile_username" ?></td>
+							<!-- <td><?php echo "$profile_username" ?></td> -->
 							<td><?php echo $obj->tdate ?></td>
 							<td>R$ <?php echo $obj->value ?></td>
 							<td><?php echo $obj->message ?></td>
@@ -115,3 +119,5 @@
 	</div>
 <?php endif; ?>
 <?php endif; ?>
+
+<?php require_once("footer.php") ?>

@@ -1,6 +1,10 @@
 <?php include ("header.php"); ?>
 <?php if (isset($_SESSION['uid'])): ?>
 
+<?php include("menu-categoria.php"); ?>
+
+<div class="clear"></div>
+
 <div class="rx_wrapper">
 	<div class="go-title-area center">
 		<h3 class="go-title x1">
@@ -33,20 +37,20 @@
 		$profile_get = mysql_query("SELECT * FROM user WHERE id = '$profile_id'") or die(mysql_error());
 		$profile = mysql_fetch_assoc($profile_get);
 		$profile_username = $profile['username'];
-
+		$cat = $obj->category;
+		if($cat == "Lazer")$cat_color = "000";
 		?>
 
 		<div class="default-services__item">
 		<form style="height: 100%" method="GET" action="produto.php">
 			<div class="item-inner go-box-7 hover-1">
+				<div style="background-color: <?php echo "$cat_color"; ?>" class="item-category">
+					<i class="fa fa-caret-right" aria-hidden="true"></i><?php echo "$obj->category"; ?>
+				</div>
+
 				<div class="item-thumb">
 					<img src="fotos/<?php echo "$obj->image"; ?>" alt="">
 				</div>
-				
-				<!-- <?php echo "$obj->id"; ?> -->
-				<input type="hidden" value="<?php echo $obj->id ?>" name="product_id">
-				<input type="hidden" value="<?php echo $obj->user_id ?>" name="profile_id">
-				<input class="go-button small" style="margin-top: 20px" type="submit" value="Ver Produto" name="ver">
 
 				<div class="item-inner">
 
@@ -75,10 +79,14 @@
 						<?php echo "Vendedor: $profile_username"; ?>
 					</div> -->
 
-					<div class="item-content">
+					<!-- <div class="item-content">
 						<?php $a = getExcerpt($obj->description); ?>
 						<?php echo "$a"; ?>
-					</div>
+					</div> -->
+					<!-- <?php echo "$obj->id"; ?> -->
+				<input type="hidden" value="<?php echo $obj->id ?>" name="product_id">
+				<input type="hidden" value="<?php echo $obj->user_id ?>" name="profile_id">
+				<input class="go-button small" style="margin-top: 20px" type="submit" value="Ver Produto" name="ver">
 				</div>
 			</div>
 			</form>
@@ -90,3 +98,5 @@
 </div>
 
 <?php endif; ?>
+
+<?php require_once("footer.php") ?>

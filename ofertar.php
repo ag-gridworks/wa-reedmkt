@@ -6,6 +6,8 @@
   $product_id = $_POST['product_id'];
   $seller_id = $_POST['seller_id'];
 
+  $url = $_SERVER['HTTP_REFERER'];
+
 
 //INICIA A CONSULTA AO ITEM NO BANCO DE DADOS
   $listar = mysql_query("SELECT * FROM vendas WHERE id = '$product_id'") or die(mysql_error());
@@ -66,12 +68,14 @@ if (isset($_POST['alterar1'])) {
       
          $sql = mysql_query("INSERT INTO lances (seller_id,buyer_id,product_id,message,value,tdate) VALUES ('$seller_id','$buyer_id','$product_id','$lance_message','$lance_value',NOW())");
 
-       if ($sql) {
-         header("index.php");
-       }
+      if(!$sql)
+          die ("The error is: " . mysqli_error($connection));
+        else
+          echo "<script>location.href = 'vendas.php';</script>";
 
   }
 
 endif;
 ?>
 </div>
+<?php require_once("footer.php") ?>

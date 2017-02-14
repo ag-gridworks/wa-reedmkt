@@ -70,3 +70,5 @@ if (isset($_POST['alterar1'])) {
 endif;
 ?>
 </div>
+
+<?php require_once("footer.php") ?>
