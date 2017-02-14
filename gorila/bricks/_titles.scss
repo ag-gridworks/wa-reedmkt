@@ -1,6 +1,7 @@
 h1,h2,h3,h4,h5,h6 {
 	font-family: $sub-font;
 	font-weight: bold;
+	color: #262626;
 }
 
 .go-title-area {
@@ -10,7 +11,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .go-title {
 	font-family: $sub-font;
-	color: #4A4A4A;
 	display: inline-block;
 	position: relative;
 	margin-bottom: 15px;

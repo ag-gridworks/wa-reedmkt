@@ -34,6 +34,7 @@ th {
         line-height: $line-height-base;
         vertical-align: top;
         border-top: 1px solid $table-border-color;
+        vertical-align: middle;
       }
     }
   }
@@ -101,6 +102,7 @@ th {
     > th,
     > td {
       border-bottom-width: 2px;
+      text-align: center;
     }
   }
 }

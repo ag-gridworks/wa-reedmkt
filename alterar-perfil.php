@@ -22,7 +22,10 @@
 			</div>
 		</form>
 
-
+		<?php 
+		$profile_get = mysql_query("SELECT * FROM user WHERE id = '$user_id'") or die(mysql_error());
+		$profile = mysql_fetch_assoc($profile_get);
+		$profile_cover = $profile['profile_cover']; ?>
 
 		<?php
 
@@ -58,6 +61,7 @@
 
 				preg_match("/\.(gif|bmp|png|jpg|jpeg){1}$/i", $foto["name"], $ext);
 				$nome_imagem = md5(uniqid(time())) . "." . $ext[1];
+
 
 				$caminho_imagem = "fotos/" . $nome_imagem;
 

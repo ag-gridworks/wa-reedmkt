@@ -21,7 +21,7 @@ require_once("header.php");
 
 			<form method="get" action="perfil.php">
 					<input type="hidden" value="<?php echo $user_id ?>" name="profile_id">
-					<input style="margin: 18px" class="go-button small purple" type="submit" value="Ver Perfil" name="ver">
+					<input style="margin: 18px" class="go-button small call" type="submit" value="Ver Perfil" name="ver">
 				</form>
 		</div>
 	</section>

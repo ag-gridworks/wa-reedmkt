@@ -26,7 +26,7 @@
 			</div>
 
 			<?php if($user_id == $profile_id): ?>
-				<a style="margin-top: 15px" class="go-button small purple" href="alterar-perfil.php">Alterar Perfil</a>
+				<a style="margin-top: 15px" class="go-button small call" href="alterar-perfil.php">Alterar Perfil</a>
 			<?php endif; ?>
 				
 		</div>

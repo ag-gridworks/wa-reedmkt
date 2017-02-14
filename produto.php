@@ -71,7 +71,7 @@
 			</h3>
 		</div>
 
-		<div class="product-style">
+		<div class="product-style center">
 			<div class="table-responsive"> 
 				<table class="table table-striped table-bordered sortable" cellspacing="0" width="100%">
 					<thead>
@@ -97,7 +97,7 @@
 						$profile_username = $profile['username']; ?>
 
 						<tr>
-							<td><?php echo "$profile_username" ?></td>
+							<td><img class="profile_image" src="images/cards/card1.jpg" alt=""></td>
 							<td><?php echo "$profile_username" ?></td>
 							<td><?php echo $obj->tdate ?></td>
 							<td>R$ <?php echo $obj->value ?></td>

@@ -71,9 +71,9 @@
 						R$<?php echo "$obj->value"; ?>
 					</div>
 
-					<div class="item-content">
+					<!-- <div class="item-content">
 						<?php echo "Vendedor: $profile_username"; ?>
-					</div>
+					</div> -->
 
 					<div class="item-content">
 						<?php $a = getExcerpt($obj->description); ?>
