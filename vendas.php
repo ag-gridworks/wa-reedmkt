@@ -7,9 +7,9 @@
 
 <div class="rx_wrapper">
 
-<form action="buscar.php" method="GET">
+<!-- <form action="buscar.php" method="GET">
 	<input class="go-form x1" name="keywords" type="text" placeholder="buscar">
-</form>
+</form> -->
 
 	<div class="go-title-area center">
 		<h3 class="go-title x1">
