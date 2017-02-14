@@ -3,7 +3,13 @@ require_once("header.php");
 ?>
 <?php if(isset($_SESSION['uid'])): ?>
 
-	<section class="go-hero">
+	<?php $profile_get = mysql_query("SELECT * FROM user WHERE id = '$user_id'") or die(mysql_error());
+	$profile = mysql_fetch_assoc($profile_get);
+	$profile_cover = $profile['profile_cover'];
+	?>
+
+	<section style="background: url('fotos/<?php echo "$profile_cover"; ?>') no-repeat center center;
+		background-size: cover;" class="go-hero">
 		<div class="hero-content">
 			<div class="profile-image">
 				<img src="images/posts/card090.jpg" alt="">

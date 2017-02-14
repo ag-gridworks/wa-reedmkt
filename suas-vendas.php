@@ -19,13 +19,13 @@
 						<div class="item-subtitle">
 							R$<?php echo "$obj->value"; ?>
 						</div>
-
-													<input type="hidden" value="<?php echo $obj->id ?>" name="product_id">
+<div class="item-options">
+							<input type="hidden" value="<?php echo $obj->id ?>" name="product_id">
 							<input type="hidden" value="<?php echo $obj->user_id ?>" name="profile_id">
 							<input class="go-button small orange full" type="submit" value="Ver Produto" name="ver">
 						</form>
 
-						<div class="item-options">
+						
 							<form method="POST" action="alterar-produto.php">
 								<input type="hidden" value="<?php echo $obj->id ?>" name="product_id">
 								<input class="go-button small full" type="submit" value="Alterar" name="alterar">
