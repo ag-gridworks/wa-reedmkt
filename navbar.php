@@ -8,7 +8,7 @@
 			<li class="nav-button"><a class="button red" href="signout.php"><i class="fa fa-power-off" aria-hidden="true"></i></a></li>
 			<li class="nav-button"><a class="button" href="<?php echo "$profile_url"; ?>">Perfil</a></li>
 			<li class="nav-button"><a class="button" href="anunciar.php">Anunciar</a></li>
-			<li class="nav-button"><a class="button" href="vendas.php">Produtos a venda</a></li>
+			<li class="nav-button"><a class="button" href="vendas.php">À venda</a></li>
 			<li class="nav-button"><a class="button" href="index.php">Inicio</a></li>
 			<li class="nav-button">
 			</li>

@@ -2,42 +2,37 @@
 
 include ("header.php");
 
-if(isset($_GET['buscar'])):
+include("menu-categoria.php"); ?>
 
-$query = $_GET['keywords'];
+<div class="clear"></div>
+
+<div class="rx_wrapper">
+
+
+<?php 
+if(isset($_GET['keywords'])): ?>
+<?php $query = $_GET['keywords'];
 $query = htmlspecialchars($query); 
 $query = mysql_real_escape_string($query);
-$raw_results = mysql_query("SELECT * FROM produtos WHERE (`nome` LIKE '%".$query."%') OR (`descr` LIKE '%".$query."%')")
-or die(mysql_error());
+$raw_results = mysql_query("SELECT * FROM vendas WHERE (`name` LIKE '%".$query."%') OR (`description` LIKE '%".$query."%')")
+or die(mysql_error()); ?>
 
-if(mysql_num_rows($raw_results) > 0): ?>
-
-<div id="produtos" class="container">
-		<div id="produtos__items" class="content">
-             
+<div class="go-title-area center">
+		<h3 class="go-title x1">
+			Resultados para: <?php echo "$query"; ?>
+		</h3>
+	</div>
+<section class="default-services go-flex center">
+<?php if(mysql_num_rows($raw_results) > 0): ?>
 <?php while($results = mysql_fetch_array($raw_results)):?>
 
-
-					<div class="produtos__item">
-				<div class="img-area">
-					<img src="fotos/<?php echo $results['img']; ?>">
-				</div>
-					<h1><?php echo $results['nome'] ?></h1>
-					<p><?php echo $results['descr'] ?></p>
-						<div class="product_price">R$<?php echo $results['valor'] ?>,00</div>
-						<form method="get" action="p.php">
-						<input type="hidden" value="<?php echo $results['id']?>" name="product_id">
-						<input type="submit" value="Ver Produto" name="ver">
-						</form>
-					</div>
+<?php echo "abc" ?>
      
 <?php endwhile; ?>
+</section>
 
-
-		</div>
-	</div>
-
-<?php else: echo "Sem Resultados";
+<?php else: echo "<center><h4>Sem Resultados</h4></center>";
 
 endif;
 endif;
+?>

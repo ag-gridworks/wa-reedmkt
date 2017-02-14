@@ -33,7 +33,6 @@
 					<option value="Cosmeticos">Cosméticos</option>
 					<option value="Eletro">Eletro</option>
 					<option value="Livros">Livros</option>
-					<option value="Informatica">Informática</option>
 					<option value="Casa">Casa e Decoração</option>
 					<option value="Lazer">Lazer</option>
 				</select>

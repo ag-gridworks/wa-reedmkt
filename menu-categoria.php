@@ -1,10 +1,12 @@
+<form action="categoria.php" method="GET">
 <div class="product-categories">
 	<ul>
-		<li><a id="moda" href="">Moda e Acessórios</a></li>
-		<li><a id="cosmeticos" href="">Cosméticos</a></li>
-		<li><a id="eletro" href="">Eletro</a></li>
-		<li><a id="livros" href="">Livros</a></li>
-		<li><a id="casa" href="">Casa</a></li>
-		<li><a id="lazer" href="">Lazer</a></li>
+		<li><input class="moda" name="cat" type="submit" value="Moda"></li>
+		<li><input class="cosmeticos" name="cat" type="submit" value="Cosmeticos"></li>
+		<li><input class="eletro" name="cat" type="submit" value="Eletro"></li>
+		<li><input class="livros" name="cat" type="submit" value="Livros"></li>
+		<li><input class="lazer" name="cat" type="submit" value="Lazer"></li>
+		<li><input class="casa" name="cat" type="submit" value="Casa"></li>
 	</ul>
 </div>
+</form>

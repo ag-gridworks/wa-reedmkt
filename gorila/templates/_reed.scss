@@ -68,10 +68,11 @@
 		@include make-md-column(12);
 		padding: 0;
 		li {
-			a {
+			input {
 			@include make-xs-column(2);
 			@include make-sm-column(2);
 			@include make-md-column(2);
+			border: none;
 			padding: 13px 12px;
 			background-color: #022d63;
 			border-right: 1px solid #0f3b71;
@@ -81,18 +82,31 @@
 			border-bottom: 4px solid #000;
 			font: 16px $sub-font;
 			font-weight: bold;
+			outline: none;
 			}
 
-			a#lazer {border-bottom-color: $blue;}
-			a#casa {border-bottom-color: $yellow;}
-			a#moda {border-bottom-color: $purple;}
-			a#eletro {border-bottom-color: $green;}
-			a#livros {border-bottom-color: $red;}
-			a#cosmeticos {border-bottom-color: $turquoise;}
+			input.lazer {border-bottom-color: $blue;}
+			input.casa {border-bottom-color: $yellow;}
+			input.moda {border-bottom-color: $purple;}
+			input.eletro {border-bottom-color: $green;}
+			input.livros {border-bottom-color: $red;}
+			input.cosmeticos {border-bottom-color: $turquoise;}
 
 			i {
 				font-size: 20px;
 			}
 		}
+	}
+}
+
+.search-bar {
+	@include make-md-column(12);
+	background-color: #014ead;
+	border: none;
+
+	input {
+		width: 100%;
+		color: #fff;
+		text-align: center;
 	}
 }

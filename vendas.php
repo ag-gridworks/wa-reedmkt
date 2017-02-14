@@ -6,6 +6,11 @@
 <div class="clear"></div>
 
 <div class="rx_wrapper">
+
+<form action="buscar.php" method="GET">
+	<input class="go-form x1" name="keywords" type="text" placeholder="buscar">
+</form>
+
 	<div class="go-title-area center">
 		<h3 class="go-title x1">
 			Últimos Produtos Anunciados
@@ -38,7 +43,12 @@
 		$profile = mysql_fetch_assoc($profile_get);
 		$profile_username = $profile['username'];
 		$cat = $obj->category;
-		if($cat == "Lazer")$cat_color = "000";
+		if($cat == "Moda")$cat_color = "#9b59b6";
+		if($cat == "Cosmeticos")$cat_color = "#3498db";
+		if($cat == "Eletro")$cat_color = "#1abc9c";
+		if($cat == "Livros")$cat_color = "#e74c3c";
+		if($cat == "Lazer")$cat_color = "#3498db";
+		if($cat == "Casa")$cat_color = "#f39c12";
 		?>
 
 		<div class="default-services__item">
