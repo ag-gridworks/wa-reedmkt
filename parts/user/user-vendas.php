@@ -23,7 +23,7 @@
 							<input type="hidden" value="<?php echo $obj->user_id ?>" name="profile_id">
 							<input class="go-button full small purple" type="submit" value="Ver Produto" name="ver">
 						</form>	
-						<form method="POST" action="alterar-produto.php">
+						<form method="POST" action="alterar-anuncio.php">
 							<input type="hidden" value="<?php echo $obj->id ?>" name="product_id">
 							<input class="go-button full small" type="submit" value="Alterar" name="alterar">
 						</form>

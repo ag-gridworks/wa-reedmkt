@@ -1,7 +1,7 @@
 <?php include ("header.php"); ?>
 <?php if (isset($_SESSION['uid'])): ?>
 
-<?php include("menu-categoria.php"); ?>
+<?php include("parts/layout/menu-categoria.php");?>
 
 <?php if(isset($_GET['cat'])):
 

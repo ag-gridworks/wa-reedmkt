@@ -1,2 +1,1430 @@
-body{color:#4a4a4a;font-family:'Open Sans';background-color:#f5f5f5}.content{margin-left:-15px;margin-right:-15px}.content:before,.content:after{content:" ";display:table}.content:after{clear:both}a{text-decoration:none !important}a:link{text-decoration:none}a:visited{text-decoration:none}a:hover{text-decoration:underline}a:active{text-decoration:underline}img{display:block;max-width:100%;height:auto}.clear{clear:both}.left{text-align:left !important}.right{text-align:right !important}.center{text-align:center !important}td{font-size:16px}@font-face{font-family:"Cabin";src:url("../gorila/fonts/Cabin-Regular.ttf")}@font-face{font-family:"Cabin";src:url("../gorila/fonts/Cabin-Bold.ttf");font-weight:bold}.go-button,.go-button.call,.go-button.fixed{background-color:#003a81;padding:5px 25px;font:20px "Cabin";color:#fff;border:1px solid transparent;border-radius:3px;display:inline-block;margin:0 auto;margin-bottom:5px}.go-button:hover{background-color:transparent;border:1px solid #003a81;transition:0.2s;color:#003a81}.go-button.small{font-size:15px;padding:2px 20px}.go-button.medium{font-size:25px;padding:10px 30px}.go-button.large{font-size:30px;padding:15px 35px}.go-button.full{width:100%}.go-button.turquoise{background-color:#1abc9c}.go-button.turquoise:hover{background-color:transparent;color:#1abc9c;border-color:#1abc9c}.go-button.green{background-color:#2ecc71}.go-button.green:hover{background-color:transparent;color:#2ecc71;border-color:#2ecc71}.go-button.blue{background-color:#3498db}.go-button.blue:hover{background-color:transparent;color:#3498db;border-color:#3498db}.go-button.purple{background-color:#9b59b6}.go-button.purple:hover{background-color:transparent;color:#9b59b6;border-color:#9b59b6}.go-button.dark{background-color:#34495e}.go-button.dark:hover{background-color:transparent;color:#34495e;border-color:#34495e}.go-button.yellow{background-color:#f1c40f}.go-button.yellow:hover{background-color:transparent;color:#f1c40f;border-color:#f1c40f}.go-button.orange{background-color:#e67e22}.go-button.orange:hover{background-color:transparent;color:#e67e22;border-color:#e67e22}.go-button.red{background-color:#e74c3c}.go-button.red:hover{background-color:transparent;color:#e74c3c;border-color:#e74c3c}.go-button.call{background-color:transparent;border:2px solid #f69900;cursor:pointer}.go-button.call i{padding-left:5px}.go-button.call:hover{background-color:#f69900;color:#003a81;border:2px solid #f69900}.go-button.fixed{position:fixed;z-index:10000;bottom:0;right:0;margin:10px;max-width:190px;padding:5px 10px}h1,h2,h3,h4,h5,h6{font-family:"Cabin";font-weight:bold;color:#262626}.go-title-area{display:block;margin:30px 0px}.go-title,.go-title.x1{font-family:"Cabin";display:inline-block;position:relative;margin-bottom:15px;padding-bottom:5px}.go-title:after,.go-title.x1:after{content:"";height:4px;width:100%;background-image:linear-gradient(-90deg, #f69900 0%, #f69900 100%);display:inline-block;position:absolute;bottom:0;left:0}.go-title.x1{padding-bottom:0}.go-title.x1:after{content:'';position:absolute;left:0;right:0;top:100%;margin:10px auto;width:50%;height:3px;background:#f69900}.go-title.light{color:#fff}input:focus{outline:0}.go-form.x1{color:#262626;background-color:transparent;border:none;font-family:'Cabin';font-size:24px;width:100%;height:40px;text-align:center;box-shadow:0 2px 3px rgba(10,10,10,0.1),0 0 0 1px rgba(10,10,10,0.1);margin-top:20px}.go-form.x1 ::-webkit-input-placeholder{color:red}.go-form.x1 :-moz-placeholder{color:red}.go-form.x1 ::-moz-placeholder{color:red}.go-form.x1 :-ms-input-placeholder{color:red}input[type="file"]{background-color:#f5f5f5;padding:5px;border-radius:5px;box-shadow:0 2px 3px rgba(10,10,10,0.1),0 0 0 1px rgba(10,10,10,0.1)}.hover-1:hover{cursor:pointer;border-bottom:2px solid #003a81;transition:0.3s}.hover-2:hover{cursor:pointer;box-shadow:0 0 2px 1px #f69900;transition:0.1s;background-color:transparent;color:#f69900 !important}.hover-2:hover i{color:#f69900}.go-hero{position:relative;min-height:1px;padding-left:15px;padding-right:15px;background:url("https://newevolutiondesigns.com/images/freebies/city-wallpaper-11.jpg") no-repeat center center;background-size:cover;height:45vh}@media (min-width: 992px){.go-hero{float:left;width:100%}}.go-hero:before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background-image:linear-gradient(to bottom right, #003a81, #003a81);opacity:.9}.go-hero>.hero-content{position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;text-align:center;width:100%;color:#fff;top:50%;transform:translateY(-50%)}@media (min-width: 992px){.go-hero>.hero-content{float:left;width:83.33333%}}@media (min-width: 992px){.go-hero>.hero-content{margin-left:8.33333%}}.go-hero>.hero-content h1{font:28px "Cabin";color:#fff}.go-hero>.hero-content p{font-weight:300;line-height:30px;font-size:15px;margin-bottom:20px}.go-hero>.hero-content img{margin:0 auto;width:110px;height:110px;box-shadow:0 1px 4px 0px #999;border-radius:50%}.go-hero>.hero-content .profile-username{font:28px "Cabin";color:#fff;margin-top:20px}.go-navbar{position:relative;float:left;width:100%;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;padding:0;background-color:#003a81;box-shadow:0 2px 3px rgba(10,10,10,0.1),0 0 0 1px rgba(10,10,10,0.1);z-index:1000}@media (min-width: 768px){.go-navbar{float:left;width:100%}}@media (min-width: 992px){.go-navbar{float:left;width:100%}}.go-navbar.hero{background-color:transparent}ul.topnav{position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;list-style-type:none;margin:0;padding:0;overflow:hidden}@media (min-width: 768px){ul.topnav{float:left;width:83.33333%}}@media (min-width: 768px){ul.topnav{margin-left:8.33333%}}@media (min-width: 992px){ul.topnav{float:left;width:83.33333%}}@media (min-width: 992px){ul.topnav{margin-left:8.33333%}}ul.topnav li{float:left}ul.topnav li a{display:inline-block;color:#fff;text-align:center;padding:18px 25px;text-decoration:none;transition:0.3s;font-size:14px;text-transform:uppercase}ul.topnav li a.brand{font:26px "Cabin";color:#fff;text-transform:none;padding:12px;padding-right:20px}ul.topnav li a.button{float:right;background-color:#022d63;padding:2px 10px;font:13px "Cabin";border-radius:3px;color:#fff;border:2px solid transparent;margin-top:19px;margin-right:10px;font-weight:bold}ul.topnav li a.button:hover{color:#fff;border:2px solid #022d63;background-color:transparent}ul.topnav li a.button.red{background-color:#e74c3c}ul.topnav li a.button.red:hover{border:2px solid #e74c3c}ul.topnav li a:hover{color:#f69900}ul.topnav li.icon{display:none}ul.topnav li.nav-button{float:right}.go-box{width:100%;height:99%;padding:30px;margin-top:10px;transition:0.2s}.go-flex{overflow:hidden;display:-webkit-flex;display:-ms-flexbox;display:flex;list-style-type:none;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.go-flex-box{width:100%;float:left;display:-webkit-flex;display:-ms-flexbox;display:flex;align-items:center;justify-box-content:center}.go-box-default,.go-box-1,.go-box-2,.go-box-3,.go-box-4,.go-box-7{width:100%;box-shadow:0 2px 3px rgba(10,10,10,0.1),0 0 0 1px rgba(10,10,10,0.1);border-radius:3px;display:inline-block;position:relative;height:99%;background-color:#FFF;border-bottom:2px solid transparent}.go-box-1>.item-icon{font-size:50px;margin-bottom:15px;color:#003a81}.go-box-1>.item-thumb img{width:120px;height:120px;border:2px solid #003a81;border-radius:50%;margin:0 auto;text-align:center;margin-bottom:30px}.go-box-1>.item-title{font:19px "Cabin";color:#262626;font-weight:bold;margin-bottom:10px}.go-box-1>.item-subtitle{font:25px "Cabin"}.go-box-1>.item-content{margin-top:15px;line-height:25px;font-size:18px;word-wrap:break-word}.go-box-1>.item-options{margin-top:15px;margin-bottom:15px}.go-box-2 .item-left{position:relative;float:left;width:100%;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;padding:0}@media (min-width: 768px){.go-box-2 .item-left{float:left;width:25%}}@media (min-width: 992px){.go-box-2 .item-left{float:left;width:25%}}.go-box-2 .item-left>.item-icon{color:#003a81;font-size:30px}.go-box-2 .item-left>.item-thumb img{width:60%;border:2px solid #003a81;border-radius:50%}.go-box-2 .item-right{padding:0;position:relative;float:left;width:100%;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;text-align:left;height:100%}@media (min-width: 768px){.go-box-2 .item-right{float:left;width:75%}}@media (min-width: 992px){.go-box-2 .item-right{float:left;width:75%}}.go-box-2 .item-right>.item-title{font:26px "Cabin";color:#454545;font-weight:bold}.go-box-2 .item-right>.item-subtitle{font:15px "Cabin"}.go-box-2 .item-right>.item-content{margin-top:15px}.go-box-2 .item-right .item-options{padding:15px 0px;border-bottom:1px solid #d7d7d7}.go-box-3 .item-left{position:relative;float:left;width:16.66667%;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;padding:0}@media (min-width: 768px){.go-box-3 .item-left{float:left;width:16.66667%}}@media (min-width: 992px){.go-box-3 .item-left{float:left;width:16.66667%}}.go-box-3 .item-left>.item-icon{color:#454545;font-size:30px}.go-box-3 .item-left>.item-thumb{text-align:center}.go-box-3 .item-left>.item-thumb img{width:70%;border:2px solid #454545;border-radius:50%}.go-box-3 .item-right{padding:0;position:relative;float:left;width:83.33333%;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;text-align:left;height:100%}@media (min-width: 768px){.go-box-3 .item-right{float:left;width:83.33333%}}@media (min-width: 992px){.go-box-3 .item-right{float:left;width:83.33333%}}.go-box-3 .item-right>.item-title{font:26px "Cabin";color:#454545;font-weight:bold}.go-box-3 .item-right>.item-subtitle{font:15px "Cabin"}.go-box-3 .item-right>.item-content{margin-top:15px}.go-box-3 .item-right .item-options{padding:15px 0px;border-bottom:1px solid #d7d7d7}.go-box-4{text-align:center;height:100%;margin-bottom:20px;padding:30px;background-color:#191c23;border-radius:3px;transition:0.2s}.go-box-4 i{color:#fff;font-size:30px;display:inline-block;padding-right:10px}.go-box-4 .item-title{color:#fff;font:20px "Cabin";display:inline-block;color:#a9a9a9}.go-box-5 .item-left{position:relative;float:left;width:100%;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;background-color:#003a81;padding:0;overflow:hidden}@media (min-width: 768px){.go-box-5 .item-left{float:left;width:50%}}@media (min-width: 992px){.go-box-5 .item-left{float:left;width:50%}}.go-box-5 .item-left img{min-height:100%;min-width:100%;position:absolute;top:-9999px;bottom:-9999px;left:-9999px;right:-9999px;margin:auto;transition:0.2s}.go-box-5 .item-right{position:relative;float:left;width:100%;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width: 768px){.go-box-5 .item-right{float:left;width:50%}}@media (min-width: 992px){.go-box-5 .item-right{float:left;width:50%}}.go-box-5 .item-right .item-content{padding:30px;line-height:28px;text-align:justify}.go-box-6{margin-top:20px}.go-box-6 .item-icon{width:80px;height:80px;display:block;margin:0 auto;border-radius:50%;background-color:#f69900}.go-box-6 .item-icon i{color:#003a81;font-size:38px;line-height:80px}.go-box-6 .item-title{margin-top:15px;font:23px "Cabin";font-weight:bold;color:#fff}.go-box-6 .item-subtitle{font-size:13px;line-height:28px;text-align:center;padding:15px}.go-box-7{padding:0 !important}.go-box-7 .item-category{color:#ecf0f1;padding:8px;font-weight:bold}.go-box-7 .item-category i{padding-right:5px}.go-box-7>.item-thumb{height:250px;position:relative;overflow:hidden}.go-box-7>.item-thumb img{display:block;max-width:100%;height:auto;position:relative;min-width:100%;min-height:100%}.go-box-7 .item-inner{padding:15px}.go-box-7 .item-inner>.item-title{font:17px "Cabin";color:#262626;font-weight:bold;margin-bottom:15px;min-height:40px}.go-box-7 .item-inner>.item-subtitle{font:20px "Cabin";font-weight:bold;color:#262626}.go-box-7 .item-inner>.item-content{margin-top:15px;line-height:25px}.go-box-7 .item-inner>.item-options{margin-top:15px;margin-bottom:15px}.go-box-7 .item-inner .item-seller{font:19px "Cabin"}.go-testmonials{text-align:center;padding:60px}.go-testmonials img{width:95px;height:95px;border:1px solid #fff;border-radius:50%;margin:0 auto;box-shadow:0 1px 4px 0px #999}.go-testmonials .item-title{font:28px "Cabin";padding-top:20px}.go-testmonials .item-subtitle{font:14px "Cabin";margin-top:10px}.go-testmonials .item-text{margin-top:20px;line-height:23px;font-size:13px}.go-call{position:relative;min-height:1px;padding-left:15px;padding-right:15px;background-color:#f69900;background:url("https://newevolutiondesigns.com/images/freebies/city-wallpaper-11.jpg") no-repeat center center;background-size:cover;padding:30px}@media (min-width: 992px){.go-call{float:left;width:100%}}.go-call:before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background-image:linear-gradient(to bottom right, #003a81, #003a81);opacity:.9}.go-call .item-inner{position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;text-align:center;width:100%;color:#fff}@media (min-width: 992px){.go-call .item-inner{float:left;width:83.33333%}}@media (min-width: 992px){.go-call .item-inner{margin-left:8.33333%}}.go-call .item-inner .item-title{font:28px "Cabin";color:#fff}.go-call .item-inner .item-content{font-weight:100;line-height:28px;font-size:15px;margin:20px 0px}.go-grid{background-color:#003a81;overflow:hidden}.go-grid .item-title{font:25px "Cabin";display:none;position:absolute;color:#fff;bottom:50%;left:0;right:0;text-align:center;font-weight:bold}.go-grid img{height:100%;width:100%;max-width:none;position:absolute;top:-9999px;bottom:-9999px;left:-9999px;right:-9999px;margin:auto;transition:0.2s}.go-grid:before{content:"";display:block;padding-top:100%}.go-grid:hover{cursor:pointer}.go-grid:hover .item-title{display:block}.go-grid:hover img{height:110%;width:110%;opacity:.1;transition:0.2s}.default-services{position:relative;min-height:1px;padding-left:15px;padding-right:15px;padding:0}@media (min-width: 992px){.default-services{float:left;width:100%}}.default-services>.default-services__item{position:relative;float:left;width:100%;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;margin:15px 0px}@media (min-width: 768px){.default-services>.default-services__item{float:left;width:50%}}@media (min-width: 992px){.default-services>.default-services__item{float:left;width:25%}}.default-services>.default-services__item>.item-inner{padding:30px}.default-infobox{position:relative;min-height:1px;padding-left:15px;padding-right:15px;background-color:#003a81;padding:60px;color:#fff;background-image:url("../images/nerve.jpg")}@media (min-width: 992px){.default-infobox{float:left;width:100%}}.default-infobox .infobox-title{font:40px "Cabin";font-weight:bold}.default-infobox .infobox-subtitle{font-size:13px;line-height:28px;margin-bottom:30px}.default-infobox .default-infobox__item{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width: 992px){.default-infobox .default-infobox__item{float:left;width:33.33333%}}.default-infos{position:relative;min-height:1px;padding-left:15px;padding-right:15px;padding:0;background-color:#003a81;padding-top:20px}@media (min-width: 992px){.default-infos{float:left;width:100%}}.default-infos .default-infos__item{position:relative;float:left;width:100%;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width: 768px){.default-infos .default-infos__item{float:left;width:100%}}@media (min-width: 992px){.default-infos .default-infos__item{float:left;width:33.33333%}}.default-infos .default-infos__item .item-inner{padding:30px}.default-grid{position:relative;min-height:1px;padding-left:15px;padding-right:15px;padding:0}@media (min-width: 992px){.default-grid{float:left;width:100%}}.default-grid .default-grid__item{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width: 992px){.default-grid .default-grid__item{float:left;width:25%}}.default-profiles{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width: 992px){.default-profiles{float:left;width:100%}}.default-profiles .default-profiles__item{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width: 992px){.default-profiles .default-profiles__item{float:left;width:50%}}.default-box1{position:relative;min-height:1px;padding-left:15px;padding-right:15px;padding:0}@media (min-width: 992px){.default-box1{float:left;width:100%}}.default-box1>.default-box1__item{position:relative;float:left;width:100%;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;margin:15px 0px}@media (min-width: 768px){.default-box1>.default-box1__item{float:left;width:100%}}@media (min-width: 992px){.default-box1>.default-box1__item{float:left;width:100%}}.default-box1>.default-box1__item>.item-inner{padding:30px}.default-contact{position:relative;min-height:1px;padding-left:15px;padding-right:15px;background-image:url("../images/nerve.jpg");color:#fff;padding-top:40px;padding-bottom:60px}@media (min-width: 992px){.default-contact{float:left;width:100%}}.default-contact .item-subtitle{position:relative;min-height:1px;padding-left:15px;padding-right:15px;font-weight:300;line-height:35px;font-size:15px;margin:20px 0px}@media (min-width: 992px){.default-contact .item-subtitle{float:left;width:66.66667%}}@media (min-width: 992px){.default-contact .item-subtitle{margin-left:16.66667%}}.default-contact .item-inner{position:relative;min-height:1px;padding-left:15px;padding-right:15px;text-align:center}@media (min-width: 992px){.default-contact .item-inner{float:left;width:66.66667%}}@media (min-width: 992px){.default-contact .item-inner{margin-left:16.66667%}}footer{background-color:#262626;border-top:2px solid #f69900;padding:60px;text-align:center}footer .item-brand{color:#fff;font:22px "Cabin";margin-bottom:20px}footer .item-social{display:inline-block}footer .item-social i{font-size:24px;color:#fff;padding:23px;color:#f69900;transition:0.2s}footer .item-social i:hover{transition:0.2s;color:#fff}.rx_wrapper{position:relative;min-height:1px;padding-left:15px;padding-right:15px;background-color:#fff;box-shadow:0 2px 3px rgba(10,10,10,0.1),0 0 0 1px rgba(10,10,10,0.1);min-height:100vh}@media (min-width: 992px){.rx_wrapper{float:left;width:83.33333%}}@media (min-width: 992px){.rx_wrapper{margin-left:8.33333%}}.product-box{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width: 992px){.product-box{float:left;width:100%}}.product-box .product-image{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width: 992px){.product-box .product-image{float:left;width:50%}}.product-box .product-image img{display:block;max-width:100%;height:auto;min-width:100%;box-shadow:0 1px 4px 0px #999}.product-box .product-info{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width: 992px){.product-box .product-info{float:left;width:50%}}.product-box .product-info .product-category{font-size:20px;margin-bottom:15px}.product-box .product-info .product-seller{font-size:20px;margin-bottom:15px}.product-box .product-info .product-value{font:38px "Cabin";font-weight:bold;margin-bottom:15px;color:#262626}.product-box .product-info .product-description{margin-top:50px;line-height:28px;font-size:17px}.profile_image{border-radius:50%;width:95px;height:95px;box-shadow:0 1px 4px 0px #999;margin:0 auto;border:2px solid transparent}.product-categories{position:relative;float:left;width:100%;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;padding:0}@media (min-width: 768px){.product-categories{float:left;width:100%}}@media (min-width: 992px){.product-categories{float:left;width:100%}}.product-categories ul{display:table;list-style-type:none;position:relative;float:left;width:100%;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;padding:0}@media (min-width: 768px){.product-categories ul{float:left;width:100%}}@media (min-width: 992px){.product-categories ul{float:left;width:100%}}.product-categories ul li input{position:relative;float:left;width:16.66667%;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;position:relative;min-height:1px;padding-left:15px;padding-right:15px;border:none;padding:13px 12px;background-color:#022d63;border-right:1px solid #0f3b71;color:#fff;text-align:center;transition:0.2s;border-bottom:4px solid #000;font:16px "Cabin";font-weight:bold;outline:none}@media (min-width: 768px){.product-categories ul li input{float:left;width:16.66667%}}@media (min-width: 992px){.product-categories ul li input{float:left;width:16.66667%}}.product-categories ul li input.lazer{border-bottom-color:#3498db}.product-categories ul li input.casa{border-bottom-color:#f1c40f}.product-categories ul li input.moda{border-bottom-color:#9b59b6}.product-categories ul li input.eletro{border-bottom-color:#2ecc71}.product-categories ul li input.livros{border-bottom-color:#e74c3c}.product-categories ul li input.cosmeticos{border-bottom-color:#1abc9c}.product-categories ul li i{font-size:20px}.search-bar{position:relative;min-height:1px;padding-left:15px;padding-right:15px;background-color:#014ead;border:none}@media (min-width: 992px){.search-bar{float:left;width:100%}}.search-bar input{width:100%;color:#fff;text-align:center}.upload-box{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width: 992px){.upload-box{float:left;width:100%}}.upload-box .box-inner{text-align:center;padding:30px}@media (max-width: 768px){.box-2 .box-right{text-align:center !important}.box-2 .box-left{margin-bottom:15px}.box-2 .box-right>.content>.footer{position:relative !important}.box-2 .box-left>.box-thumb img{width:90px !important}.box-5 .box-left{min-height:300px}.box-5 .box-right .box-content{padding:0;margin:15px 0px}.rx_wrapper{text-align:center}.product-box .product-info{margin-top:30px}}@media screen and (max-width: 680px){ul.topnav li:not(:first-child){display:none}ul.topnav li.icon{float:right;display:inline-block}ul.topnav li a.button{float:left;margin-left:22px;margin-bottom:20px}}@media screen and (max-width: 680px){ul.topnav.responsive{position:relative}ul.topnav.responsive li.icon{position:absolute;right:0;top:0}ul.topnav.responsive li{float:none;display:inline}ul.topnav.responsive li a{display:block;text-align:left}ul.topnav li a.button{float:left}}
+body {
+  color: #4a4a4a;
+  font-family: 'Open Sans';
+  background-color: #f5f5f5; }
+
+.content {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .content:before, .content:after {
+    content: " ";
+    display: table; }
+  .content:after {
+    clear: both; }
+
+a {
+  text-decoration: none !important; }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:active {
+  text-decoration: underline; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.clear {
+  clear: both; }
+
+.left {
+  text-align: left !important; }
+
+.right {
+  text-align: right !important; }
+
+.center {
+  text-align: center !important; }
+
+td {
+  font-size: 16px; }
+
+@font-face {
+  font-family: "Cabin";
+  src: url("../gorila/fonts/Cabin-Regular.ttf"); }
+@font-face {
+  font-family: "Cabin";
+  src: url("../gorila/fonts/Cabin-Bold.ttf");
+  font-weight: bold; }
+.go-button, .go-button.call, .go-button.fixed {
+  background-color: #003a81;
+  padding: 5px 25px;
+  font: 20px "Cabin";
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 5px; }
+  .go-button:hover {
+    background-color: transparent;
+    border: 1px solid #003a81;
+    transition: 0.2s;
+    color: #003a81; }
+
+.go-button.small {
+  font-size: 15px;
+  padding: 2px 20px; }
+
+.go-button.medium {
+  font-size: 25px;
+  padding: 10px 30px; }
+
+.go-button.large {
+  font-size: 30px;
+  padding: 15px 35px; }
+
+.go-button.full {
+  width: 100%; }
+
+.go-button.turquoise {
+  background-color: #1abc9c; }
+  .go-button.turquoise:hover {
+    background-color: transparent;
+    color: #1abc9c;
+    border-color: #1abc9c; }
+
+.go-button.green {
+  background-color: #2ecc71; }
+  .go-button.green:hover {
+    background-color: transparent;
+    color: #2ecc71;
+    border-color: #2ecc71; }
+
+.go-button.blue {
+  background-color: #3498db; }
+  .go-button.blue:hover {
+    background-color: transparent;
+    color: #3498db;
+    border-color: #3498db; }
+
+.go-button.purple {
+  background-color: #9b59b6; }
+  .go-button.purple:hover {
+    background-color: transparent;
+    color: #9b59b6;
+    border-color: #9b59b6; }
+
+.go-button.dark {
+  background-color: #34495e; }
+  .go-button.dark:hover {
+    background-color: transparent;
+    color: #34495e;
+    border-color: #34495e; }
+
+.go-button.yellow {
+  background-color: #f1c40f; }
+  .go-button.yellow:hover {
+    background-color: transparent;
+    color: #f1c40f;
+    border-color: #f1c40f; }
+
+.go-button.orange {
+  background-color: #e67e22; }
+  .go-button.orange:hover {
+    background-color: transparent;
+    color: #e67e22;
+    border-color: #e67e22; }
+
+.go-button.red {
+  background-color: #e74c3c; }
+  .go-button.red:hover {
+    background-color: transparent;
+    color: #e74c3c;
+    border-color: #e74c3c; }
+
+.go-button.call {
+  background-color: transparent;
+  border: 2px solid #f69900;
+  cursor: pointer; }
+  .go-button.call i {
+    padding-left: 5px; }
+  .go-button.call:hover {
+    background-color: #f69900;
+    color: #003a81;
+    border: 2px solid #f69900; }
+
+.go-button.fixed {
+  position: fixed;
+  z-index: 10000;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  max-width: 190px;
+  padding: 5px 10px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cabin";
+  font-weight: bold;
+  color: #262626; }
+
+.go-title-area {
+  display: block;
+  margin: 30px 0px; }
+
+.go-title, .go-title.x1 {
+  font-family: "Cabin";
+  display: inline-block;
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 5px; }
+  .go-title:after, .go-title.x1:after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-image: linear-gradient(-90deg, #f69900 0%, #f69900 100%);
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+.go-title.x1 {
+  padding-bottom: 0; }
+  .go-title.x1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin: 10px auto;
+    width: 50%;
+    height: 3px;
+    background: #f69900; }
+
+.go-title.light {
+  color: #fff; }
+
+input:focus {
+  outline: 0; }
+
+.go-form.x1 {
+  color: #262626;
+  background-color: transparent;
+  border: none;
+  font-family: 'Cabin';
+  font-size: 24px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  margin-top: 20px; }
+  .go-form.x1 ::-webkit-input-placeholder {
+    color: red; }
+  .go-form.x1 :-moz-placeholder {
+    /* Firefox 18- */
+    color: red; }
+  .go-form.x1 ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: red; }
+  .go-form.x1 :-ms-input-placeholder {
+    color: red; }
+
+input[type="file"] {
+  background-color: #f5f5f5;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1); }
+
+.hover-1:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #003a81;
+  transition: 0.3s; }
+
+.hover-2:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2px 1px #f69900;
+  transition: 0.1s;
+  background-color: transparent;
+  color: #f69900 !important; }
+  .hover-2:hover i {
+    color: #f69900; }
+
+.go-hero {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: url("https://newevolutiondesigns.com/images/freebies/city-wallpaper-11.jpg") no-repeat center center;
+  background-size: cover;
+  height: 45vh; }
+  @media (min-width: 992px) {
+    .go-hero {
+      float: left;
+      width: 100%; } }
+  .go-hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #003a81, #003a81);
+    opacity: .9; }
+  .go-hero > .hero-content {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%); }
+    @media (min-width: 992px) {
+      .go-hero > .hero-content {
+        float: left;
+        width: 83.33333%; } }
+    @media (min-width: 992px) {
+      .go-hero > .hero-content {
+        margin-left: 8.33333%; } }
+    .go-hero > .hero-content h1 {
+      font: 28px "Cabin";
+      color: #fff; }
+    .go-hero > .hero-content p {
+      font-weight: 300;
+      line-height: 30px;
+      font-size: 15px;
+      margin-bottom: 20px; }
+    .go-hero > .hero-content img {
+      margin: 0 auto;
+      width: 110px;
+      height: 110px;
+      box-shadow: 0 1px 4px 0px #999;
+      border-radius: 50%; }
+    .go-hero > .hero-content .profile-username {
+      font: 28px "Cabin";
+      color: #fff;
+      margin-top: 20px; }
+
+/* Remove margins and padding from the list, and add a black background color */
+.go-navbar {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0;
+  background-color: #003a81;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  z-index: 1000;
+  position: fixed;
+  margin-bottom: 60px; }
+  @media (min-width: 768px) {
+    .go-navbar {
+      float: left;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .go-navbar {
+      float: left;
+      width: 100%; } }
+
+.go-navbar.hero {
+  background-color: transparent; }
+
+ul.topnav {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    ul.topnav {
+      float: left;
+      width: 83.33333%; } }
+  @media (min-width: 768px) {
+    ul.topnav {
+      margin-left: 8.33333%; } }
+  @media (min-width: 992px) {
+    ul.topnav {
+      float: left;
+      width: 83.33333%; } }
+  @media (min-width: 992px) {
+    ul.topnav {
+      margin-left: 8.33333%; } }
+
+/* Float the list items side by side */
+ul.topnav li {
+  float: left; }
+
+/* Style the links inside the list items */
+ul.topnav li a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 18px 25px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+ul.topnav li a.brand {
+  font: 26px "Cabin";
+  color: #fff;
+  text-transform: none;
+  padding: 12px;
+  padding-right: 20px; }
+
+ul.topnav li a.button {
+  float: right;
+  background-color: #022d63;
+  padding: 2px 10px;
+  font: 13px "Cabin";
+  border-radius: 3px;
+  color: #fff;
+  border: 2px solid transparent;
+  margin-top: 19px;
+  margin-right: 10px;
+  font-weight: bold; }
+  ul.topnav li a.button:hover {
+    color: #fff;
+    border: 2px solid #022d63;
+    background-color: transparent; }
+
+ul.topnav li a.button.red {
+  background-color: #e74c3c; }
+  ul.topnav li a.button.red:hover {
+    border: 2px solid #e74c3c; }
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+  color: #f69900; }
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {
+  display: none; }
+
+ul.topnav li.nav-button {
+  float: right; }
+
+.go-box {
+  width: 100%;
+  height: 99%;
+  padding: 30px;
+  margin-top: 10px;
+  transition: 0.2s; }
+
+.go-flex {
+  overflow: hidden;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.go-flex-box {
+  width: 100%;
+  float: left;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-box-content: center; }
+
+.go-box-default, .go-box-1, .go-box-2, .go-box-3, .go-box-4, .go-box-7 {
+  width: 100%;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  height: 99%;
+  background-color: #FFF;
+  border-bottom: 2px solid transparent; }
+
+.go-box-1 > .item-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #003a81; }
+.go-box-1 > .item-thumb img {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #003a81;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px; }
+.go-box-1 > .item-title {
+  font: 19px "Cabin";
+  color: #262626;
+  font-weight: bold;
+  margin-bottom: 10px; }
+.go-box-1 > .item-subtitle {
+  font: 25px "Cabin"; }
+.go-box-1 > .item-content {
+  margin-top: 15px;
+  line-height: 25px;
+  font-size: 18px;
+  word-wrap: break-word; }
+.go-box-1 > .item-options {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.go-box-2 .item-left {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .go-box-2 .item-left {
+      float: left;
+      width: 25%; } }
+  @media (min-width: 992px) {
+    .go-box-2 .item-left {
+      float: left;
+      width: 25%; } }
+  .go-box-2 .item-left > .item-icon {
+    color: #003a81;
+    font-size: 30px; }
+  .go-box-2 .item-left > .item-thumb img {
+    width: 60%;
+    border: 2px solid #003a81;
+    border-radius: 50%; }
+.go-box-2 .item-right {
+  padding: 0;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+  height: 100%; }
+  @media (min-width: 768px) {
+    .go-box-2 .item-right {
+      float: left;
+      width: 75%; } }
+  @media (min-width: 992px) {
+    .go-box-2 .item-right {
+      float: left;
+      width: 75%; } }
+  .go-box-2 .item-right > .item-title {
+    font: 26px "Cabin";
+    color: #454545;
+    font-weight: bold; }
+  .go-box-2 .item-right > .item-subtitle {
+    font: 15px "Cabin"; }
+  .go-box-2 .item-right > .item-content {
+    margin-top: 15px; }
+  .go-box-2 .item-right .item-options {
+    padding: 15px 0px;
+    border-bottom: 1px solid #d7d7d7; }
+
+.go-box-3 .item-left {
+  position: relative;
+  float: left;
+  width: 16.66667%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .go-box-3 .item-left {
+      float: left;
+      width: 16.66667%; } }
+  @media (min-width: 992px) {
+    .go-box-3 .item-left {
+      float: left;
+      width: 16.66667%; } }
+  .go-box-3 .item-left > .item-icon {
+    color: #454545;
+    font-size: 30px; }
+  .go-box-3 .item-left > .item-thumb {
+    text-align: center; }
+    .go-box-3 .item-left > .item-thumb img {
+      width: 70%;
+      border: 2px solid #454545;
+      border-radius: 50%; }
+.go-box-3 .item-right {
+  padding: 0;
+  position: relative;
+  float: left;
+  width: 83.33333%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+  height: 100%; }
+  @media (min-width: 768px) {
+    .go-box-3 .item-right {
+      float: left;
+      width: 83.33333%; } }
+  @media (min-width: 992px) {
+    .go-box-3 .item-right {
+      float: left;
+      width: 83.33333%; } }
+  .go-box-3 .item-right > .item-title {
+    font: 26px "Cabin";
+    color: #454545;
+    font-weight: bold; }
+  .go-box-3 .item-right > .item-subtitle {
+    font: 15px "Cabin"; }
+  .go-box-3 .item-right > .item-content {
+    margin-top: 15px; }
+  .go-box-3 .item-right .item-options {
+    padding: 15px 0px;
+    border-bottom: 1px solid #d7d7d7; }
+
+.go-box-4 {
+  text-align: center;
+  height: 100%;
+  margin-bottom: 20px;
+  padding: 30px;
+  background-color: #191c23;
+  border-radius: 3px;
+  transition: 0.2s; }
+  .go-box-4 i {
+    color: #fff;
+    font-size: 30px;
+    display: inline-block;
+    padding-right: 10px; }
+  .go-box-4 .item-title {
+    color: #fff;
+    font: 20px "Cabin";
+    display: inline-block;
+    color: #a9a9a9; }
+
+.go-box-5 .item-left {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #003a81;
+  padding: 0;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .go-box-5 .item-left {
+      float: left;
+      width: 50%; } }
+  @media (min-width: 992px) {
+    .go-box-5 .item-left {
+      float: left;
+      width: 50%; } }
+  .go-box-5 .item-left img {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    transition: 0.2s; }
+.go-box-5 .item-right {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    .go-box-5 .item-right {
+      float: left;
+      width: 50%; } }
+  @media (min-width: 992px) {
+    .go-box-5 .item-right {
+      float: left;
+      width: 50%; } }
+  .go-box-5 .item-right .item-content {
+    padding: 30px;
+    line-height: 28px;
+    text-align: justify; }
+
+.go-box-6 {
+  margin-top: 20px; }
+  .go-box-6 .item-icon {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #f69900; }
+    .go-box-6 .item-icon i {
+      color: #003a81;
+      font-size: 38px;
+      line-height: 80px; }
+  .go-box-6 .item-title {
+    margin-top: 15px;
+    font: 23px "Cabin";
+    font-weight: bold;
+    color: #fff; }
+  .go-box-6 .item-subtitle {
+    font-size: 13px;
+    line-height: 28px;
+    text-align: center;
+    padding: 15px; }
+
+.go-box-7 {
+  padding: 0 !important; }
+  .go-box-7 .item-category {
+    color: #ecf0f1;
+    padding: 8px;
+    font-weight: bold; }
+    .go-box-7 .item-category i {
+      padding-right: 5px; }
+  .go-box-7 > .item-thumb {
+    height: 250px;
+    position: relative;
+    overflow: hidden; }
+    .go-box-7 > .item-thumb img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      position: relative;
+      min-width: 100%;
+      min-height: 100%; }
+  .go-box-7 .item-inner {
+    padding: 15px; }
+    .go-box-7 .item-inner > .item-title {
+      font: 17px "Cabin";
+      color: #262626;
+      font-weight: bold;
+      margin-bottom: 15px;
+      min-height: 40px; }
+    .go-box-7 .item-inner > .item-subtitle {
+      font: 20px "Cabin";
+      font-weight: bold;
+      color: #262626; }
+    .go-box-7 .item-inner > .item-content {
+      margin-top: 15px;
+      line-height: 25px; }
+    .go-box-7 .item-inner > .item-options {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .go-box-7 .item-inner .item-seller {
+      font: 19px "Cabin"; }
+
+.go-testmonials {
+  text-align: center;
+  padding: 60px; }
+  .go-testmonials img {
+    width: 95px;
+    height: 95px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 1px 4px 0px #999; }
+  .go-testmonials .item-title {
+    font: 28px "Cabin";
+    padding-top: 20px; }
+  .go-testmonials .item-subtitle {
+    font: 14px "Cabin";
+    margin-top: 10px; }
+  .go-testmonials .item-text {
+    margin-top: 20px;
+    line-height: 23px;
+    font-size: 13px; }
+
+.go-call {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f69900;
+  background: url("https://newevolutiondesigns.com/images/freebies/city-wallpaper-11.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 30px; }
+  @media (min-width: 992px) {
+    .go-call {
+      float: left;
+      width: 100%; } }
+  .go-call:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #003a81, #003a81);
+    opacity: .9; }
+  .go-call .item-inner {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: #fff; }
+    @media (min-width: 992px) {
+      .go-call .item-inner {
+        float: left;
+        width: 83.33333%; } }
+    @media (min-width: 992px) {
+      .go-call .item-inner {
+        margin-left: 8.33333%; } }
+    .go-call .item-inner .item-title {
+      font: 28px "Cabin";
+      color: #fff; }
+    .go-call .item-inner .item-content {
+      font-weight: 100;
+      line-height: 28px;
+      font-size: 15px;
+      margin: 20px 0px; }
+
+.go-grid {
+  background-color: #003a81;
+  overflow: hidden; }
+  .go-grid .item-title {
+    font: 25px "Cabin";
+    display: none;
+    position: absolute;
+    color: #fff;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: bold; }
+  .go-grid img {
+    height: 100%;
+    width: 100%;
+    max-width: none;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    transition: 0.2s; }
+  .go-grid:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    /* initial ratio of 1:1*/ }
+  .go-grid:hover {
+    cursor: pointer; }
+    .go-grid:hover .item-title {
+      display: block; }
+    .go-grid:hover img {
+      height: 110%;
+      width: 110%;
+      opacity: .1;
+      transition: 0.2s; }
+
+.default-services {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0; }
+  @media (min-width: 992px) {
+    .default-services {
+      float: left;
+      width: 100%; } }
+  .default-services > .default-services__item {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 15px 0px; }
+    @media (min-width: 768px) {
+      .default-services > .default-services__item {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .default-services > .default-services__item {
+        float: left;
+        width: 25%; } }
+    .default-services > .default-services__item > .item-inner {
+      padding: 30px; }
+
+.default-infobox {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #003a81;
+  padding: 60px;
+  color: #fff;
+  background-image: url("../images/nerve.jpg"); }
+  @media (min-width: 992px) {
+    .default-infobox {
+      float: left;
+      width: 100%; } }
+  .default-infobox .infobox-title {
+    font: 40px "Cabin";
+    font-weight: bold; }
+  .default-infobox .infobox-subtitle {
+    font-size: 13px;
+    line-height: 28px;
+    margin-bottom: 30px; }
+  .default-infobox .default-infobox__item {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 992px) {
+      .default-infobox .default-infobox__item {
+        float: left;
+        width: 33.33333%; } }
+
+.default-infos {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0;
+  background-color: #003a81;
+  padding-top: 20px; }
+  @media (min-width: 992px) {
+    .default-infos {
+      float: left;
+      width: 100%; } }
+  .default-infos .default-infos__item {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .default-infos .default-infos__item {
+        float: left;
+        width: 100%; } }
+    @media (min-width: 992px) {
+      .default-infos .default-infos__item {
+        float: left;
+        width: 33.33333%; } }
+    .default-infos .default-infos__item .item-inner {
+      padding: 30px; }
+
+.default-grid {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0; }
+  @media (min-width: 992px) {
+    .default-grid {
+      float: left;
+      width: 100%; } }
+  .default-grid .default-grid__item {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 992px) {
+      .default-grid .default-grid__item {
+        float: left;
+        width: 25%; } }
+
+.default-profiles {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .default-profiles {
+      float: left;
+      width: 100%; } }
+  .default-profiles .default-profiles__item {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 992px) {
+      .default-profiles .default-profiles__item {
+        float: left;
+        width: 50%; } }
+
+.default-box1 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0; }
+  @media (min-width: 992px) {
+    .default-box1 {
+      float: left;
+      width: 100%; } }
+  .default-box1 > .default-box1__item {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 15px 0px; }
+    @media (min-width: 768px) {
+      .default-box1 > .default-box1__item {
+        float: left;
+        width: 100%; } }
+    @media (min-width: 992px) {
+      .default-box1 > .default-box1__item {
+        float: left;
+        width: 100%; } }
+    .default-box1 > .default-box1__item > .item-inner {
+      padding: 30px; }
+
+.default-contact {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-image: url("../images/nerve.jpg");
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 60px; }
+  @media (min-width: 992px) {
+    .default-contact {
+      float: left;
+      width: 100%; } }
+  .default-contact .item-subtitle {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 300;
+    line-height: 35px;
+    font-size: 15px;
+    margin: 20px 0px; }
+    @media (min-width: 992px) {
+      .default-contact .item-subtitle {
+        float: left;
+        width: 66.66667%; } }
+    @media (min-width: 992px) {
+      .default-contact .item-subtitle {
+        margin-left: 16.66667%; } }
+  .default-contact .item-inner {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center; }
+    @media (min-width: 992px) {
+      .default-contact .item-inner {
+        float: left;
+        width: 66.66667%; } }
+    @media (min-width: 992px) {
+      .default-contact .item-inner {
+        margin-left: 16.66667%; } }
+
+footer {
+  background-color: #262626;
+  border-top: 2px solid #f69900;
+  padding: 60px;
+  text-align: center; }
+  footer .item-brand {
+    color: #fff;
+    font: 22px "Cabin";
+    margin-bottom: 20px; }
+  footer .item-social {
+    display: inline-block; }
+    footer .item-social i {
+      font-size: 24px;
+      color: #fff;
+      padding: 23px;
+      color: #f69900;
+      transition: 0.2s; }
+      footer .item-social i:hover {
+        transition: 0.2s;
+        color: #fff; }
+
+.rx_wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  min-height: 100vh;
+  padding-bottom: 30px; }
+  @media (min-width: 992px) {
+    .rx_wrapper {
+      float: left;
+      width: 83.33333%; } }
+  @media (min-width: 992px) {
+    .rx_wrapper {
+      margin-left: 8.33333%; } }
+
+.product-box {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .product-box {
+      float: left;
+      width: 100%; } }
+  .product-box .product-image {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 992px) {
+      .product-box .product-image {
+        float: left;
+        width: 50%; } }
+    .product-box .product-image img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      min-width: 100%;
+      box-shadow: 0 1px 4px 0px #999; }
+  .product-box .product-info {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 992px) {
+      .product-box .product-info {
+        float: left;
+        width: 50%; } }
+    .product-box .product-info .product-category {
+      font-size: 20px;
+      margin-bottom: 15px; }
+    .product-box .product-info .product-seller {
+      font-size: 20px;
+      margin-bottom: 15px; }
+    .product-box .product-info .product-value {
+      font: 38px "Cabin";
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #262626; }
+    .product-box .product-info .product-description {
+      margin-top: 50px;
+      line-height: 28px;
+      font-size: 17px; }
+
+.profile_image {
+  border-radius: 50%;
+  width: 95px;
+  height: 95px;
+  box-shadow: 0 1px 4px 0px #999;
+  margin: 0 auto;
+  border: 2px solid transparent; }
+
+.product-categories {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .product-categories {
+      float: left;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .product-categories {
+      float: left;
+      width: 100%; } }
+  .product-categories ul {
+    display: table;
+    list-style-type: none;
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0; }
+    @media (min-width: 768px) {
+      .product-categories ul {
+        float: left;
+        width: 100%; } }
+    @media (min-width: 992px) {
+      .product-categories ul {
+        float: left;
+        width: 100%; } }
+    .product-categories ul li input {
+      position: relative;
+      float: left;
+      width: 16.66667%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border: none;
+      padding: 13px 12px;
+      background-color: #022d63;
+      border-right: 1px solid #0f3b71;
+      color: #fff;
+      text-align: center;
+      transition: 0.2s;
+      border-bottom: 4px solid #000;
+      font: 16px "Cabin";
+      font-weight: bold;
+      outline: none; }
+      @media (min-width: 768px) {
+        .product-categories ul li input {
+          float: left;
+          width: 16.66667%; } }
+      @media (min-width: 992px) {
+        .product-categories ul li input {
+          float: left;
+          width: 16.66667%; } }
+    .product-categories ul li input.lazer {
+      border-bottom-color: #3498db; }
+    .product-categories ul li input.casa {
+      border-bottom-color: #f1c40f; }
+    .product-categories ul li input.moda {
+      border-bottom-color: #9b59b6; }
+    .product-categories ul li input.eletro {
+      border-bottom-color: #2ecc71; }
+    .product-categories ul li input.livros {
+      border-bottom-color: #e74c3c; }
+    .product-categories ul li input.cosmeticos {
+      border-bottom-color: #1abc9c; }
+    .product-categories ul li i {
+      font-size: 20px; }
+
+.search-bar {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #014ead;
+  border: none; }
+  @media (min-width: 992px) {
+    .search-bar {
+      float: left;
+      width: 100%; } }
+  .search-bar input {
+    width: 100%;
+    color: #fff;
+    text-align: center; }
+
+.upload-box {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .upload-box {
+      float: left;
+      width: 100%; } }
+  .upload-box .box-inner {
+    text-align: center;
+    padding: 30px; }
+
+.dashboard {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .dashboard {
+      float: left;
+      width: 100%; } }
+  .dashboard .dashboard__item {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px; }
+    @media (min-width: 768px) {
+      .dashboard .dashboard__item {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .dashboard .dashboard__item {
+        float: left;
+        width: 33.33333%; } }
+    .dashboard .dashboard__item .item-inner {
+      padding: 30px; }
+
+.count {
+  color: #003a81;
+  font-weight: bold;
+  font-family: "Cabin";
+  font-size: 20px; }
+
+@media (max-width: 768px) {
+  .box-2 .box-right {
+    text-align: center !important; }
+
+  .box-2 .box-left {
+    margin-bottom: 15px; }
+
+  .box-2 .box-right > .content > .footer {
+    position: relative !important; }
+
+  .box-2 .box-left > .box-thumb img {
+    width: 90px !important; }
+
+  .box-5 .box-left {
+    min-height: 300px; }
+
+  .box-5 .box-right .box-content {
+    padding: 0;
+    margin: 15px 0px; }
+
+  .rx_wrapper {
+    text-align: center; }
+
+  .product-box .product-info {
+    margin-top: 30px; } }
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:first-child) {
+    display: none; }
+
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block; }
+
+  ul.topnav li a.button {
+    float: left;
+    margin-left: 22px;
+    margin-bottom: 20px; } }
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width: 680px) {
+  ul.topnav.responsive {
+    position: relative; }
+
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+  ul.topnav.responsive li {
+    float: none;
+    display: inline; }
+
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left; }
+
+  ul.topnav li a.button {
+    float: left; } }
+
 /*# sourceMappingURL=style.css.map */

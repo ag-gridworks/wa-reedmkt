@@ -28,4 +28,10 @@ function getExcerpt($str, $startPos=0, $maxLength=100) {
 	return $excerpt;
 }
 
+function countMessages($var) {
+	if ($var == 0) {
+		return false;
+	} else return true;
+}
+
 ?>

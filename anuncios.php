@@ -1,10 +1,7 @@
 <?php include ("header.php"); ?>
 <?php if (isset($_SESSION['uid'])): ?>
-
-<?php include("menu-categoria.php"); ?>
-
+<?php include("parts/layout/menu-categoria.php");?>
 <div class="clear"></div>
-
 <div class="rx_wrapper">
 
 <!-- <form action="buscar.php" method="GET">

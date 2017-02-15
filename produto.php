@@ -24,7 +24,7 @@
 	$product_description = $product['description'];
 
 	?>
-<?php include("menu-categoria.php"); ?>
+<?php include("parts/layout/menu-categoria.php"); ?>
 
 	<div class="rx_wrapper">
 		<div class="go-title-area center">

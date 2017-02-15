@@ -5,6 +5,7 @@
 	background-color: #fff;
 	box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
 	min-height: 100vh;
+	padding-bottom: 30px;
 }
 
 .product-box {
@@ -126,3 +127,23 @@
 // 		background-color: red;
 // 	}
 // }
+
+.dashboard {
+	@include make-md-column(12);
+	.dashboard__item {
+		@include make-xs-column(12);
+		@include make-sm-column(6);
+		@include make-md-column(4);
+		margin-top: 10px;
+		.item-inner {
+			padding: 30px;
+		}
+	}
+}
+
+.count {
+	color: $color-1;
+	font-weight: bold;
+	font-family: $sub-font;
+	font-size: 20px;
+}

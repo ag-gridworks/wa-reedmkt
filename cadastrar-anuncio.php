@@ -101,7 +101,7 @@
 				if(!$sql)
 					die ("The error is: " . mysqli_error($connection));
 				else
-					echo "<script>location.href = 'vendas.php';</script>";
+					echo "<script>location.href = 'anuncios.php';</script>";
 			}
 		}
 	

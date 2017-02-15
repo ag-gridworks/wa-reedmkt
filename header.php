@@ -21,5 +21,5 @@ if (isset($_SESSION['uid'])) {
 	include ("safe.php");
 }
 
-include("navbar.php"); ?>
+include("parts/layout/navbar.php"); ?>
 

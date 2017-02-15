@@ -17,6 +17,7 @@
   $vendedor = mysql_fetch_assoc($listar_vendedor);
 
   $vendedor_name = $vendedor['username'];
+  $vendedor_messages = $vendedor['user_messages'];
 
 //VARIAVEIS DO ITEM EM CONSULTA
 
@@ -47,6 +48,7 @@
   
 <div class="go-title-area center">
   <input type="hidden" value="<?php echo $product_id ?>" name="product_id">
+  <input type="hidden" value="<?php echo $vendedor_messages ?>" name="user_messages">
   <input type="hidden" value="<?php echo $seller_id ?>" name="seller_id">
   <input type="hidden" value="<?php echo $user_id ?>" name="buyer_id">
   <button type="submit" class="go-button" name="alterar1">Ofertar</button>
@@ -64,14 +66,19 @@ if (isset($_POST['alterar1'])) {
   $product_id = $_POST['product_id'];
   $lance_value = $_POST['lance_value'];
   $lance_message = $_POST['lance_message']; 
+  $user_messages = $_POST['user_messages'];
+
+  $user_messages = $user_messages + 1;
 
       
          $sql = mysql_query("INSERT INTO lances (seller_id,buyer_id,product_id,message,value,tdate) VALUES ('$seller_id','$buyer_id','$product_id','$lance_message','$lance_value',NOW())");
 
-      if(!$sql)
+         $sql2 = mysql_query("UPDATE user SET user_messages = '$user_messages' WHERE id = '$seller_id'");
+
+      if(!$sql2)
           die ("The error is: " . mysqli_error($connection));
         else
-          echo "<script>location.href = 'vendas.php';</script>";
+          echo "<script>location.href = 'anuncios.php';</script>";
 
   }
 
