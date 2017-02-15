@@ -15,6 +15,7 @@
 	$profile_sector = $profile['profile_sector'];
 
 	$profile_cover = $profile['profile_cover'];
+	$profile_image = $profile['profile_image'];
 
 	// echo strlen($profile_cover);
 	?>
@@ -27,7 +28,7 @@
 	<section style="<?php echo "$get_profile_cover"; ?>" class="go-hero">
 		<div class="hero-content">
 			<div class="profile-image">
-				<img src="images/posts/card090.jpg" alt="">
+				<img src="fotos/<?php echo "$profile_image"; ?>" alt="">
 			</div>
 
 			<div class="profile-username">

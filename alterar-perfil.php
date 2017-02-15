@@ -24,6 +24,19 @@
 		<div class="go-title-area center">
 			<h3 class="go-title x1">Alterar Perfil</h3>
 		</div>
+
+		<div class="upload-box">
+		<div class="box-inner go-box-1">
+			<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data" name="foto">
+			<div class="upload-area">
+				<label for="exampleInputFile">Imagem de Perfil</label>
+				<input type="hidden" value="<?php echo $user_id ?>" name="user_id">
+				<input style="margin: 0 auto; margin-bottom: 10px; margin-top: 10px" type="file" name="foto" aria-describedby="fileHelp">
+				<button type="submit" class="go-button small" name="alterar_imagem">Alterar Imagem</button>
+			</div>
+			</form>
+			</div>
+			</div>
 		
 		<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data" name="cadastro">
 			<section class="default-services go-flex center">
@@ -91,14 +104,9 @@
 					</div>
 				</div>
 			</section>
-
-			<!-- <div class="form-group">
-				<label for="exampleInputFile">Imagem de Capa</label>
-				<input type="file" class="form-control-file" name="foto" aria-describedby="fileHelp">
-			</div> -->
-
 			
 			<div class="go-title-area center">
+				
 				<input type="hidden" value="<?php echo $user_id ?>" name="user_id">
 				<button type="submit" class="go-button small" name="alterar_perfil">Alterar Perfil</button>
 			</div>
@@ -126,7 +134,7 @@
 					echo "<script>location.href = '$profile_url';</script>";
 			}
 
-		if (isset($_POST['alterar_capa'])) {
+		if (isset($_POST['alterar_imagem'])) {
 
 			$foto = $_FILES['foto'];
 			$user_id = $_POST['user_id'];
@@ -164,11 +172,12 @@
 
 				move_uploaded_file($foto["tmp_name"], $caminho_imagem);	
 
-
-
-				$sql = mysql_query("UPDATE user SET profile_cover = '$nome_imagem' WHERE id = '$user_id'");
-				header('Location: http://www.example.com/someurl.php', true);
+				$sql = mysql_query("UPDATE user SET profile_image = '$nome_imagem' WHERE id = '$user_id'");
 				
+				if(!$sql)
+					die ("The error is: " . mysqli_error($connection));
+				else
+					echo "<script>location.href = '$profile_url';</script>";
 			}
 		}
 

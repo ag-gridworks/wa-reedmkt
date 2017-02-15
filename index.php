@@ -6,6 +6,7 @@ require_once("header.php");
 	<?php $profile_get = mysql_query("SELECT * FROM user WHERE id = '$user_id'") or die(mysql_error());
 	$profile = mysql_fetch_assoc($profile_get);
 	$profile_cover = $profile['profile_cover'];
+	$profile_image = $profile['profile_image'];
 	?>
 	
 	<?php if (strlen($profile_cover) == 0) {
@@ -17,7 +18,7 @@ require_once("header.php");
 	<section style="<?php echo "$get_profile_cover"; ?>" class="go-hero">
 		<div class="hero-content">
 			<div class="profile-image">
-				<img src="images/posts/card090.jpg" alt="">
+				<img src="fotos/<?php echo "$profile_image"; ?>" alt="">
 			</div>
 
 			<div class="profile-username">

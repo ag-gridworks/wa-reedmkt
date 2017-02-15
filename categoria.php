@@ -11,6 +11,8 @@ $cat = $_GET['cat'];
 <div class="clear"></div>
 
 <div class="rx_wrapper">
+
+<div class="clear"></div>
 	<div class="go-title-area center">
 		<h3 class="go-title x1">
 			<?php echo "$cat"; ?>

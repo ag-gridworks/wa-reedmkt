@@ -58,12 +58,12 @@ if (isset($_POST['alterar1'])) {
   $product_id = $_POST['product_id'];
   $user_id = $_POST['user_id'];  
 
-       $sql = mysql_query("UPDATE vendas SET name = '$name', value = '$value' WHERE id = '$product_id'");
+       $sql = mysql_query("UPDATE vendas SET name = '$name', value = '$value', description = '$description' WHERE id = '$product_id'");
 
-       if ($sql) {
-         header("index.php");
-       }
-
+       if(!$sql)
+          die ("The error is: " . mysqli_error($connection));
+        else
+          echo "<script>location.href = 'index.php';</script>";
   }
 
 

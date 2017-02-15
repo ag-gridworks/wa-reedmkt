@@ -98,13 +98,16 @@
 
 						<?php $profile_get = mysql_query("SELECT * FROM user WHERE id = '$buyer_id'") or die(mysql_error());
 						$profile = mysql_fetch_assoc($profile_get);
-						$profile_username = $profile['username']; ?>
+						$profile_username = $profile['username'];
+						$profile_image = $profile['profile_image'];
+						?>
+
 
 						<tr>
-							<td><img class="profile_image" src="images/cards/card1.jpg" alt=""><br><?php echo "$profile_username" ?></td>
+							<td><img class="profile_image" src="fotos/<?php echo "$profile_image"; ?>" alt=""><br><?php echo "$profile_username" ?></td>
 							<!-- <td><?php echo "$profile_username" ?></td> -->
 							<td><?php echo $obj->tdate ?></td>
-							<td>R$ <?php echo $obj->value ?></td>
+							<td>R$<?php echo $obj->value ?></td>
 							<td><?php echo $obj->message ?></td>
 
 						</tr>
@@ -115,7 +118,7 @@
 			</table>
 		</div>
 	</div>
-	<div style="margin-bottom: 60px">
+	<div style="padding-bottom: 60px">
 	</div>
 <?php endif; ?>
 <?php endif; ?>

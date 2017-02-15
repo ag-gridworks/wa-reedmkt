@@ -14,6 +14,8 @@
 		@include make-md-column(6);
 
 		img {
+			@include img-responsive;
+			min-width: 100%;
 			box-shadow: 0 1px 4px 0px #999;
 		}
 	}
@@ -110,3 +112,17 @@
 		text-align: center;
 	}
 }
+
+.upload-box {
+	@include make-md-column(12);
+	.box-inner {
+	text-align: center;
+	padding: 30px;
+	}
+}
+
+// .upload-area {
+// 	input[type="button"] {
+// 		background-color: red;
+// 	}
+// }

@@ -6,7 +6,7 @@
 	if ($result = $mysqli->query($query)): ?>
 	<?php while($obj = $result->fetch_object()): ?>
 		<div class="default-services__item">
-			<form  method="GET" action="produto.php">
+			<form style="height: 100%" method="GET" action="produto.php">
 				<div class="item-inner go-box-7 hover-1">
 					<div class="item-thumb">
 						<img src="fotos/<?php echo "$obj->image"; ?>" alt="">
@@ -34,10 +34,10 @@
 							<input type="submit" class="go-button full small red" value="Deletar" name="deletar">
 						</form>
 					</div>
-					<div class="item-content">
+					<!-- <div class="item-content">
 						<?php $a = getExcerpt($obj->description); ?>
 						<?php echo "$a"; ?>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>

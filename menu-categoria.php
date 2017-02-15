@@ -10,3 +10,5 @@
 	</ul>
 </div>
 </form>
+
+<div class="clear"></div>
