@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.6.5.2
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 15-Fev-2017 às 19:17
--- Versão do servidor: 10.1.19-MariaDB
--- PHP Version: 5.5.38
+-- Generation Time: 15-Fev-2017 às 23:40
+-- Versão do servidor: 10.1.21-MariaDB
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,6 +19,30 @@ SET time_zone = "+00:00";
 --
 -- Database: `reedx`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `caronas`
+--
+
+CREATE TABLE `caronas` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `start` varchar(150) NOT NULL,
+  `status` int(11) NOT NULL,
+  `ref1` varchar(150) NOT NULL,
+  `ref2` varchar(150) NOT NULL,
+  `point1` varchar(150) NOT NULL,
+  `point2` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `caronas`
+--
+
+INSERT INTO `caronas` (`id`, `user_id`, `start`, `status`, `ref1`, `ref2`, `point1`, `point2`) VALUES
+(3, 2, 'Rua Vergueiro - Ipiranga, SÃ£o Paulo - SP, Brasil', 1, 'Rua Conde de Bonfim - Tijuca, Rio de Janeiro - RJ, Brasil', 'Rua Augusta - ConsolaÃ§Ã£o, SÃ£o Paulo - SP, Brasil', 'Avenida Diagonal, Barcelona, Espanha', 'Parque Ibirapuera, SÃ£o Paulo - SP, Brasil');
 
 -- --------------------------------------------------------
 
@@ -45,7 +69,7 @@ INSERT INTO `lances` (`id`, `seller_id`, `buyer_id`, `product_id`, `message`, `v
 (1, 2, 2, 11, 'adasdsad', 23.00, '2017-02-15', 1),
 (2, 2, 2, 11, 'asdasdsad', 23.00, '2017-02-15', 1),
 (3, 2, 2, 11, 'fdfdafad', 23.00, '2017-02-15', 1),
-(4, 2, 2, 11, 'asdadfgdfdafvfbv', 23.00, '2017-02-15', 0);
+(4, 2, 2, 11, 'asdadfgdfdafvfbv', 23.00, '2017-02-15', 1);
 
 -- --------------------------------------------------------
 
@@ -102,6 +126,12 @@ INSERT INTO `vendas` (`id`, `user_id`, `name`, `description`, `value`, `image`, 
 --
 
 --
+-- Indexes for table `caronas`
+--
+ALTER TABLE `caronas`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `lances`
 --
 ALTER TABLE `lances`
@@ -123,6 +153,11 @@ ALTER TABLE `vendas`
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `caronas`
+--
+ALTER TABLE `caronas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `lances`
 --
