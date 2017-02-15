@@ -9,4 +9,7 @@
 		<script src="js/vendors/bootstrap/bootstrap.min.js"></script>
 		<script src="js/vendors/owl-carousel/owl.carousel.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&key=AIzaSyAP4l1X0Zg34sb9_xw1J6vLbL3ENpK_X9g" async="" defer="defer" type="text/javascript"></script>
+
+		<script src="js/script.js"> </script>
 	</footer>

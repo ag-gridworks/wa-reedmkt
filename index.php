@@ -33,7 +33,6 @@ require_once("header.php");
 	</section>
 
 	<div class="rx_wrapper">
-
 	<?php include("parts/user/user-dashboard.php") ?>
 
 <!-- Usuário Deslogado -->

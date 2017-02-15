@@ -10,8 +10,9 @@
 	<link rel="stylesheet" href="assets/components/components-font-awesome/css/font-awesome.min.css">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<!-- Script -->
 </head>
-<body>
+<body onload="initialize()">
 
 <?php include("functions.php");
 connect();

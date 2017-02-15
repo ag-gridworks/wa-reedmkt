@@ -4,7 +4,7 @@
 	</h3>
 </div>
 
-<div class="dashboard go-flex center">
+<div class="dashboard center go-flex">
 	<div class="dashboard__item" onclick="location.href='minhas-vendas.php'">
 		<div class="item-inner go-box-1 hover-1">
 			<div class="item-icon">

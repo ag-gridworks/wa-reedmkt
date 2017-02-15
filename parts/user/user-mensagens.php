@@ -8,7 +8,7 @@
 					<th width="160px">Data</th>
 					<th width="100px">Valor do Lance</th>
 					<th>Mensagem</th>
-					<th width="10px">Ações</th>
+					<th width="160px">Ações</th>
 				</tr>
 			</thead>
 			<?php 
@@ -16,7 +16,7 @@
 			if ($result = $mysqli->query($query)): ?>
 			<?php while($obj = $result->fetch_object()): ?>
 				<?php
-				$buyer_id = $obj->buyer_id ;
+				$buyer_id = $obj->buyer_id;
 				$product_id = $obj->product_id;
 				$message_id = $obj->id;
 				$message_status = $obj->status;
@@ -24,7 +24,9 @@
 				<?php $profile_get = mysql_query("SELECT * FROM user WHERE id = '$buyer_id'") or die(mysql_error());
 				$profile = mysql_fetch_assoc($profile_get);
 				$profile_username = $profile['username'];
-				$profile_image = $profile['profile_image']; ?>
+				$profile_image = $profile['profile_image'];
+				$user_url = userUrl($buyer_id);
+				?>
 
 				<?php $product_get = mysql_query("SELECT * FROM vendas WHERE id = '$product_id'") or die(mysql_error());
 				$product = mysql_fetch_assoc($product_get);
@@ -40,10 +42,11 @@
 						<?php if ($message_status == 0): ?>
 							<form action="process.php" method="POST">
 								<input type="hidden" value="<?php echo "$message_id"; ?>" name="message_id">
-								<input class="go-button small" type="submit" value="Marcar Como Lido" name="status">
+								<input class="go-button small full" type="submit" value="Marcar Como Lido" name="status">
 							</form>
-							<?php else:?> <input disabled class="go-button small green" type="submit" value="Lido">
+							<?php else:?> <input disabled class="go-button small green full" type="submit" value="Lido">
 						<?php endif; ?>
+						<a class="go-button small purple full" href="<?php echo "$user_url"; ?>">Ver Perfil</a>
 					</td>
 				</tr>
 			<?php endwhile; ?>

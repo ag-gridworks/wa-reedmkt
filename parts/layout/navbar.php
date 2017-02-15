@@ -19,6 +19,6 @@
 			</ul>
 		</header>
 		<div class="clear"></div>
-		<div style="padding-bottom: 57px;"></div>
+		<div style="padding-bottom: 56px;"></div>
 	<?php else: ?>
 	<?php endif; ?>
