@@ -3,6 +3,26 @@
     google.maps.event.addListener(autocomplete, 'place_changed', function() {
       fillInAddress();
     });
+
+    autocomplete2 = new google.maps.places.Autocomplete(document.getElementById('autocomplete2'), { types: [ 'geocode' ] });
+    google.maps.event.addListener(autocomplete, 'place_changed', function() {
+      fillInAddress();
+    });
+
+    autocomplete3 = new google.maps.places.Autocomplete(document.getElementById('autocomplete3'), { types: [ 'geocode' ] });
+    google.maps.event.addListener(autocomplete, 'place_changed', function() {
+      fillInAddress();
+    });
+
+    autocomplete4 = new google.maps.places.Autocomplete(document.getElementById('autocomplete4'), { types: [ 'geocode' ] });
+    google.maps.event.addListener(autocomplete, 'place_changed', function() {
+      fillInAddress();
+    });
+
+    autocomplete5 = new google.maps.places.Autocomplete(document.getElementById('autocomplete5'), { types: [ 'geocode' ] });
+    google.maps.event.addListener(autocomplete, 'place_changed', function() {
+      fillInAddress();
+    });
   }
   function fillInAddress() {
     var place = autocomplete.getPlace();
@@ -20,8 +40,3 @@
       }
     }
   }
-
-  autocomplete2 = new google.maps.places.Autocomplete(document.getElementById('autocomplete2'), { types: [ 'geocode' ] });
-google.maps.event.addListener(autocomplete2, 'place_changed', function() {
-  fillInAddress();
-});

@@ -10,7 +10,7 @@
 
 <div class="go-title-area center">
 	Suas Caronas não estão habilitadas. <br><br>
-	<a href="cadastrar-anuncio.php" class="go-button small">Habilitar Caronas</a>
+	<a href="cadastrar-carona.php" class="go-button small">Habilitar Caronas</a>
 </div>
 
 <?php else: ?>
