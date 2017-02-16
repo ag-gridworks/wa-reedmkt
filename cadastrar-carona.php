@@ -62,7 +62,7 @@
 			if(!$sql)
 				die ("The error is: " . mysqli_error($connection));
 			else
-				echo "<script>location.href = 'minhas-caronas.php';</script>";
+				echo "<script>location.href = 'caronas.php';</script>";
 		}
 		endif;
 		?>

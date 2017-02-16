@@ -34,7 +34,7 @@
 		</div>
 	</div>
 
-	<div class="dashboard__item" onclick="location.href='minhas-caronas.php'">
+	<div class="dashboard__item" onclick="location.href='caronas.php'">
 		<div class="item-inner go-box-1 hover-1">
 			<div class="item-icon">
 				<i class="fa fa-car" aria-hidden="true"></i>

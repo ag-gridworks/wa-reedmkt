@@ -17,6 +17,15 @@
 	$profile_cover = $profile['profile_cover'];
 	$profile_image = $profile['profile_image'];
 
+	$ride_get = mysql_query("SELECT * FROM caronas WHERE user_id = '$profile_id'") or die(mysql_error());
+	$ride = mysql_fetch_assoc($ride_get);
+
+	$ride_start = $ride['start'];
+	$ride_r1 = $ride['ref1'];
+	$ride_r2 = $ride['ref2'];
+	$ride_p1 = $ride['point1'];
+	$ride_p2 = $ride['point2'];
+
 	// echo strlen($profile_cover);
 	?>
 	<?php if (strlen($profile_cover) == 0) {
@@ -111,6 +120,60 @@
 				</div>
 			</div>
 		</section>
+		
+		<?php if ($ride == true): ?>
+
+		<div class="go-title-area center">
+			<h3 class="go-title x1">Caminho de <?php echo "$profile_name"; ?></h3>
+		</div>
+
+		<section class="ride-box go-flex center">
+		<div class="ride-box__item full">
+				<item class="item-inner go-box-1">
+					<div class="item-title">
+						Ponto Inicial
+					</div>
+					<p><?php echo "$ride_start"; ?></p>
+				</item>
+			</div>
+			<div class="ride-box__item">
+				<item class="item-inner go-box-1">
+					<div class="item-title">
+						Ponto de Referência 1
+					</div>
+					<p><?php echo "$ride_r1"; ?></p>
+				</item>
+			</div>
+
+			<div class="ride-box__item">
+				<item class="item-inner go-box-1">
+					<div class="item-title">
+						Ponto de Referência 2
+					</div>
+					<p><?php echo "$ride_r2"; ?></p>
+				</item>
+			</div>
+
+			<div class="ride-box__item">
+				<item class="item-inner go-box-1">
+					<div class="item-title">
+						Ponto no Caminho 1
+					</div>
+					<p><?php echo "$ride_p1"; ?></p>
+				</item>
+			</div>
+
+			<div class="ride-box__item">
+				<item class="item-inner go-box-1">
+					<div class="item-title">
+						Ponto no Caminho 2
+					</div>
+					<p><?php echo "$ride_p2"; ?></p>
+				</item>
+			</div>
+		</section>
+		
+		<?php endif; ?>
 
 		<div class="go-title-area center">
 			<h3 class="go-title x1">Vendas de <?php echo "$profile_name"; ?></h3>

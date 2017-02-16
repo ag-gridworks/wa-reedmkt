@@ -28,8 +28,8 @@ function getExcerpt($str, $startPos=0, $maxLength=100) {
 	return $excerpt;
 }
 
-function userUrl ($var) {
-	$profile_url = "perfil.php?profile_id=$var&ver=Ver+Perfil";
+function userUrl ($id) {
+	$profile_url = "perfil.php?profile_id=$id&ver=Ver+Perfil";
 	return $profile_url;
 }
 

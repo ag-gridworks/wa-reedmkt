@@ -21,5 +21,4 @@ $all_messages_count = mysql_num_rows($get_all_messages);
 $get_ride_status = mysql_query("SELECT * FROM caronas WHERE user_id = '$user_id'");
 $ride = mysql_fetch_assoc($get_ride_status);
 $ride_status = $ride['status'];
-
 $ride_start = $ride['start'];

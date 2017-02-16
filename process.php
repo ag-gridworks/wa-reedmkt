@@ -27,3 +27,13 @@ if (isset($_POST['status'])):
           echo "<script>location.href = 'minhas-mensagens.php';</script>";
 
 endif;
+
+
+if (isset($_POST['desabilitar'])):
+
+    $sql = mysql_query("DELETE FROM caronas WHERE user_id = '$user_id' ");
+     if(!$sql)
+          die ("The error is: " . mysqli_error($connection));
+        else
+          echo "<script>location.href = 'caronas.php';</script>";
+endif;

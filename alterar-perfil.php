@@ -51,7 +51,7 @@
 						</div>
 
 						<div class="item-content">
-							<input class="form-control" type="text" name="email" value="<?php echo $profile_email ?>">
+							<input class="form-control" type="email" name="email" value="<?php echo $profile_email ?>">
 						</div>
 					</div>
 				</div>
@@ -67,7 +67,7 @@
 						</div>
 
 						<div class="item-content">
-							<input class="form-control" type="text" name="floor" value="<?php echo $profile_floor ?>">
+							<input class="form-control" type="number" name="floor" value="<?php echo $profile_floor ?>">
 						</div>
 					</div>
 				</div>
@@ -83,7 +83,7 @@
 						</div>
 
 						<div class="item-content">
-							<input class="form-control" type="text" name="phone" value="<?php echo $profile_phone ?>">
+							<input class="form-control" type="number" name="phone" value="<?php echo $profile_phone ?>">
 						</div>
 					</div>
 				</div>

@@ -147,3 +147,27 @@
 	font-family: $sub-font;
 	font-size: 20px;
 }
+
+.ride-box {
+	@include make-md-column(12);
+	padding: 0;
+	>.ride-box__item {
+		@include make-xs-column(12);
+		@include make-sm-column(6);
+		@include make-md-column(6);
+		margin: 15px 0px;
+		>.item-inner {
+			padding: 15px;
+		}
+
+		p {
+			font-size: 18px;
+			margin-top: 15px;
+		}
+	}
+
+	.ride-box__item.full {
+		@extend .ride-box__item;
+		@include make-md-column(12);
+	}
+}
