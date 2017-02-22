@@ -37,9 +37,13 @@ require_once("header.php");
 
 <!-- Usuário Deslogado -->
 	<?php else: ?>
-		<div style="padding: 60px" class="rx_wrapper center">
-			<a href="signin.php" class="go-button">Entrar</a>
-			<a href="signup.php" class="go-button">Registrar</a>
+		<div class="go-login-page">
+			<div class="login-box">
+				<div class="box-content">
+				<a href="signin.php" class="go-button">Entrar</a>
+				<a href="signup.php" class="go-button">Registrar</a>
+				</div>
+			</div>
 		</div>
 	<?php endif; ?>
 	<?php require_once("footer.php") ?>

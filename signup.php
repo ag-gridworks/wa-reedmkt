@@ -3,7 +3,8 @@
     include("header.php");
 
     ?>
-     <div style="padding: 60px" class="rx_wrapper">
+     <div class="go-login-page">
+     <div class="login-box">
     <form accept-charset="UTF-8" role="form" action="signup.php" method="post">
       <fieldset>
         <div class="form-group">
@@ -20,7 +21,6 @@
         <input class="go-button green full" type="submit" value="Cadastrar" name="register">
       </fieldset>
     </form>
-
 
     <?php
 
@@ -54,3 +54,10 @@
       }
     }
   }
+?>
+
+    </div>
+</div>
+
+
+<?php require_once("footer.php") ?>
