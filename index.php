@@ -37,13 +37,6 @@ require_once("header.php");
 
 <!-- Usuário Deslogado -->
 	<?php else: ?>
-		<div class="go-login-page">
-			<div class="login-box">
-				<div class="box-content">
-				<a href="signin.php" class="go-button">Entrar</a>
-				<a href="signup.php" class="go-button">Registrar</a>
-				</div>
-			</div>
-		</div>
+		<?php require_once("signin.php"); ?>
 	<?php endif; ?>
 	<?php require_once("footer.php") ?>

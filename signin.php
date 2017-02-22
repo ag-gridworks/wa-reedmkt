@@ -1,9 +1,9 @@
 	<?php
-  include("header.php");
   ?>
   <div class="go-login-page">
   <div class="login-box">
-  <form accept-charset="UTF-8" role="form" action="signin.php" method="post">
+  <div class="box-content">
+  <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data" name="login">
     <fieldset>
       <div class="form-group">
         <input class="form-control" placeholder="Usuário" name="username" type="text">
@@ -36,5 +36,4 @@
 
   </div>
   </div>
-
-  <?php require_once("footer.php") ?>
+  </div>

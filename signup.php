@@ -5,6 +5,7 @@
     ?>
      <div class="go-login-page">
      <div class="login-box">
+     <div class="box-content">
     <form accept-charset="UTF-8" role="form" action="signup.php" method="post">
       <fieldset>
         <div class="form-group">
@@ -19,6 +20,7 @@
         </div>
 
         <input class="go-button green full" type="submit" value="Cadastrar" name="register">
+        <!-- <button class="go-button purple full" value="Login" onclick="window.location='index.php'">Logaaain</button> -->
       </fieldset>
     </form>
 
@@ -58,6 +60,6 @@
 
     </div>
 </div>
-
+</div>
 
 <?php require_once("footer.php") ?>
