@@ -49,7 +49,11 @@
 			</div>
 
 			<div class="item-content">
-				Você ainda não cadastrou um intinerário
+				<?php if ($ride_status == 0) {
+					echo "Você não cadastrou seu caminho";
+					} 
+				 	else echo "Seu caminho está cadastrado";
+				?>
 			</div>
 
 			<div class="item-options hide">

@@ -5,8 +5,8 @@
 			<!-- <li><a href="#news">item1</a></li>
 			<li><a href="#contact">item2</a></li>
 			<li><a href="#about">item3</a></li> -->
+			
 			<li class="nav-button"><a class="button red" href="signout.php"><i class="fa fa-power-off" aria-hidden="true"></i></a></li>
-
 			<li class="nav-button"><a class="button" href="<?php echo "$profile_url"; ?>">Perfil</a></li>
 			<li class="nav-button"><a class="button" href="cadastrar-anuncio.php">Anunciar</a></li>
 			<li class="nav-button"><a class="button" href="caronas.php">Caronas</a></li>

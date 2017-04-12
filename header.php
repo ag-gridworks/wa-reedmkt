@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="js">
 <head>
 	<meta charset="UTF-8">
 	<title>Reed Market</title>
@@ -8,9 +8,11 @@
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="assets/components/components-font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/custom.css">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<!-- Script -->
+	<script src="assets/components/jquery/dist/jquery.min.js"></script>
 </head>
 <body onload="initialize()">
 
@@ -23,4 +25,3 @@ if (isset($_SESSION['uid'])) {
 }
 
 include("parts/layout/navbar.php"); ?>
-

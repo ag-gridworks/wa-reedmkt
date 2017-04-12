@@ -25,3 +25,13 @@ img {@include img-responsive;}
 .center {text-align: center !important;}
 
 td {font-size: 16px}
+
+.error {
+	margin-top: 10px;
+	background-color: #e74c3c;
+	color: #fff;
+	padding: 12px;
+	width: 100%;
+	border-radius: 3px;
+	border-bottom: 2px solid #c0392b;
+}

@@ -25,7 +25,7 @@
         
         $login_check = mysql_query("SELECT `id` FROM `user` WHERE `username`='$username' AND `password`='".md5($password)."'") or die(mysql_error());
         if(mysql_num_rows($login_check) == 0){
-            echo "Usuário ou senha inválidos!";
+            echo "<div class='error'>Usuário ou senha inválidos!</div>";
         }else{
             $get_id = mysql_fetch_assoc($login_check);
             $_SESSION['uid'] = $get_id['id'];

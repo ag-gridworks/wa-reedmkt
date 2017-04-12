@@ -12,4 +12,5 @@
 		<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&key=AIzaSyAP4l1X0Zg34sb9_xw1J6vLbL3ENpK_X9g" async="" defer="defer" type="text/javascript"></script>
 
 		<script src="js/script.js"> </script>
+		<script src="scripts/main.js"> </script>
 	</footer>

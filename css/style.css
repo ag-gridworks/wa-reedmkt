@@ -47,6 +47,15 @@ img {
 td {
   font-size: 16px; }
 
+.error {
+  margin-top: 10px;
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 12px;
+  width: 100%;
+  border-radius: 3px;
+  border-bottom: 2px solid #c0392b; }
+
 @font-face {
   font-family: "Cabin";
   src: url("../gorila/fonts/Cabin-Regular.ttf"); }
@@ -168,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .go-title-area {
   display: block;
-  margin: 30px 0px; }
+  padding: 30px 0px; }
 
 .go-title, .go-title.x1 {
   font-family: "Cabin";
@@ -481,7 +490,7 @@ ul.topnav li.nav-button {
 .go-box-1 > .item-content {
   margin-top: 15px;
   line-height: 25px;
-  font-size: 18px;
+  font-size: 15px;
   word-wrap: break-word; }
 .go-box-1 > .item-options {
   margin-top: 15px;
@@ -1195,7 +1204,6 @@ footer {
 .profile_image {
   border-radius: 50%;
   width: 95px;
-  height: 95px;
   box-shadow: 0 1px 4px 0px #999;
   margin: 0 auto;
   border: 2px solid transparent; }
@@ -1215,7 +1223,8 @@ footer {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: -10px; }
   @media (min-width: 768px) {
     .product-categories {
       float: left;
@@ -1370,6 +1379,16 @@ footer {
   font-family: "Cabin";
   font-size: 20px; }
 
+.ride-toggle {
+  background-color: #003a81;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  border-radius: 3px; }
+  .ride-toggle:hover {
+    cursor: pointer; }
+
 .ride-box {
   position: relative;
   min-height: 1px;
@@ -1380,7 +1399,7 @@ footer {
     .ride-box {
       float: left;
       width: 100%; } }
-  .ride-box > .ride-box__item, .ride-box > .ride-box__item.full {
+  .ride-box .ride-box__item, .ride-box .ride-box__item.full {
     position: relative;
     float: left;
     width: 100%;
@@ -1397,16 +1416,16 @@ footer {
     padding-right: 15px;
     margin: 15px 0px; }
     @media (min-width: 768px) {
-      .ride-box > .ride-box__item, .ride-box > .ride-box__item.full {
+      .ride-box .ride-box__item, .ride-box .ride-box__item.full {
         float: left;
         width: 50%; } }
     @media (min-width: 992px) {
-      .ride-box > .ride-box__item, .ride-box > .ride-box__item.full {
+      .ride-box .ride-box__item, .ride-box .ride-box__item.full {
         float: left;
         width: 50%; } }
-    .ride-box > .ride-box__item > .item-inner {
+    .ride-box .ride-box__item .item-inner {
       padding: 15px; }
-    .ride-box > .ride-box__item p, .ride-box > .ride-box__item.full p {
+    .ride-box .ride-box__item p, .ride-box .ride-box__item.full p {
       font-size: 18px;
       margin-top: 15px; }
   .ride-box .full.ride-box__item {
@@ -1520,7 +1539,19 @@ footer {
     text-align: center; }
 
   .product-box .product-info {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  ul.topnav li a.button {
+    margin-left: 0;
+    margin-bottom: 0;
+    float: left;
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px;
+    text-align: center !important; }
+
+  .go-button.small {
+    padding: 15px 10px; } }
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width: 680px) {
   ul.topnav li:not(:first-child) {
@@ -1531,9 +1562,7 @@ footer {
     display: inline-block; }
 
   ul.topnav li a.button {
-    float: left;
-    margin-left: 22px;
-    margin-bottom: 20px; } }
+    float: left; } }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
 @media screen and (max-width: 680px) {
   ul.topnav.responsive {

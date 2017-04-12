@@ -20,6 +20,7 @@
         </div>
 
         <input class="go-button green full" type="submit" value="Cadastrar" name="register">
+        <a href="index.php" class="go-button blue full">Fazer Login</a>
         <!-- <button class="go-button purple full" value="Login" onclick="window.location='index.php'">Logaaain</button> -->
       </fieldset>
     </form>
@@ -32,26 +33,24 @@
       $email = protect($_POST['email']);
 
       if($username == "" || $password == "" || $email == ""){
-        echo "<br>Preencha todos os campos!";
+        echo "<div class='error'>Preencha todos os campos!</div>";
       }elseif(strlen($username) > 14){
-        echo "<br>Usuário deve conter menos de 14 caracteres!";
+        echo "<div class='error'>Usuário deve conter menos de 14 caracteres!</div>";
       }elseif(strlen($email) > 100){
-        echo "<br>E-Mail muito longo!";
+        echo "<div class='error'>E-Mail muito longo!</div>";
       }else{
         $register1 = mysql_query("SELECT `id` FROM `user` WHERE `username`='$username'") or die(mysql_error());
         $register2 = mysql_query("SELECT `id` FROM `user` WHERE `email`='$email'") or die(mysql_error());
         if(mysql_num_rows($register1) > 0){
-          echo "<br>Este usuário já está em uso!";
+          echo "<div class='error'>Este usuário já está em uso!</div>";
         }elseif(mysql_num_rows($register2) > 0){
-          echo "<br>Este endereço de e-mail já está em uso!";
+          echo "<div class='error'>Este endereço de e-mail já está em uso!</div>";
         }else{ 
 
          $ins1 = mysql_query("INSERT INTO `user` (`username`,`password`,`email`) VALUES ('$username','".md5($password)."','$email')") or die(mysql_error());
 
-         echo "<br>Você se registou! <br>";
-
          if ($ins1 == true) {
-          echo '<br><p><a class="cormedio" href="signin.php">Clique Aqui para fazer login</a></p>';
+          echo '<a href="index.php"><div class="error blue">Usuário Cadastrado, Clique Aqui para fazer login</div></a>';
         }
       }
     }
