@@ -41,6 +41,7 @@
 
 			<div class="form-group">
 				<label for="exampleTextarea">Descrição</label>
+				<small class="form-text text-muted">Essa caixa de texto aceita códigos HTML</small>
 				<textarea required input="text" name="description" class="form-control" rows="3"></textarea>
 			</div>
 			

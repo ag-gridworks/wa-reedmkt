@@ -13,6 +13,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<!-- Script -->
 	<script src="assets/components/jquery/dist/jquery.min.js"></script>
+	<script src="scripts/main.js"> </script>
 </head>
 <body onload="initialize()">
 

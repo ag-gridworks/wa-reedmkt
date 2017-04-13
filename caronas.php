@@ -58,7 +58,8 @@
 					</div>
 					
 					<div class="item-content">
-						Ponto inicial
+						<i style="color: #e74c3c" class="fa fa-map-marker" aria-hidden="true"></i>
+						<b>Ponto inicial</b>
 						<p><?php echo "$obj->start"; ?></p>
 					</div>
 					<div class="item-options">

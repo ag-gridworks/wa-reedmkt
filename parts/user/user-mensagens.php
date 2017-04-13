@@ -39,13 +39,14 @@
 					<td>R$ <?php echo $obj->value ?></td>
 					<td><?php echo $obj->message ?></td>
 					<td>
-						<?php if ($message_status == 0): ?>
-							<form action="process.php" method="POST">
-								<input type="hidden" value="<?php echo "$message_id"; ?>" name="message_id">
-								<input class="go-button small full" type="submit" value="Marcar Como Lido" name="status">
-							</form>
-							<?php else:?> <input disabled class="go-button small green full" type="submit" value="Lido">
-						<?php endif; ?>
+						<button
+						id="messageStatus<?php echo "$message_id"; ?>"
+						class="go-button small full <?php if($message_status == 0)echo "blue"; else echo "green"; ?>"
+						onclick="markRead(<?php echo "$message_id" ?>)"
+						>
+						<?php if($message_status == 0)echo "Marcar como Lido"; else echo "Lido"; ?>
+						</button>
+
 						<a class="go-button small purple full" href="<?php echo "$user_url"; ?>">Ver Perfil</a>
 					</td>
 				</tr>

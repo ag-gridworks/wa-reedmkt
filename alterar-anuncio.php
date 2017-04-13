@@ -36,6 +36,7 @@
 
   <div class="form-group">
     <label for="exampleInputPassword1">Descrição</label>
+    <small class="form-text text-muted">Essa caixa de texto aceita códigos HTML</small>
         <textarea input="text" name="description" class="form-control" rows="3"><?php echo "$description"; ?></textarea>
   </div>
   
